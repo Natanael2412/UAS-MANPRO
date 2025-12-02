@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/header.php';
+require __DIR__ . '/partials/header.php';
 
 
 $contact_result = '';
@@ -57,4 +57,4 @@ $contact_result = 'Harap isi semua bidang dengan benar.';
 <h3>Visi & Misi</h3>
 <p><strong>Visi:</strong> Menjadi jurusan unggul dalam pendidikan sistem informasi yang inovatif dan beretika.</p>
 <p><strong>Misi:</strong></p>
-<?php require __DIR__ . '/footer.php'; ?>
+<?php require __DIR__ . '/partials/footer.php'; ?>
