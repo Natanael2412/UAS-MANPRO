@@ -1,0 +1,81 @@
+/* ====== TENTANG.PHP STYLE ====== */
+
+/* Wrapper utama */
+.about-wrapper {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.25);
+    color: #e8edf5;
+}
+
+/* Judul utama */
+.about-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #7b61ff 0%, #29d8a0 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Konten paragraf */
+.about-content {
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: #d7dfeb;
+}
+
+/* Subjudul */
+.about-subtitle {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: .8rem;
+    color: #ffffff;
+}
+
+/* List dengan efek neon lembut */
+.about-list {
+    margin-left: 1.2rem;
+    padding-left: .5rem;
+}
+
+.about-list li {
+    margin-bottom: .6rem;
+    padding: .4rem .6rem;
+    background: rgba(255,255,255,0.05);
+    border-left: 4px solid #7b61ff;
+    border-radius: 8px;
+    transition: .25s;
+}
+
+.about-list li:hover {
+    background: rgba(255,255,255,0.10);
+    border-left-color: #29d8a0;
+}
+
+/* Quote / highlight box */
+.about-highlight {
+    margin-top: 2rem;
+    padding: 1.3rem 1.6rem;
+    background: linear-gradient(180deg, rgba(123,97,255,0.15), rgba(41,216,160,0.10));
+    border-left: 4px solid #29d8a0;
+    border-radius: 12px;
+    color: #e9f5ee;
+    font-style: italic;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .about-wrapper {
+        padding: 1.8rem;
+        margin: 1.2rem;
+    }
+    .about-title {
+        font-size: 2.1rem;
+    }
+}
