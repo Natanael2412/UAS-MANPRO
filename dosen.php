@@ -1,0 +1,69 @@
+<?php
+$title = "Dosen";
+include 'partials/header.php';
+?>
+<link rel="stylesheet" href="style2.css">
+
+<div class="page-section">
+  <h1 class="page-title">Dosen & Staf Akademik SIEGA</h1>
+
+  <p class="page-desc">
+    Berikut adalah beberapa nama dosen dan staf pengajar di Program Studi Sistem Informasi (SIEGA) — meliputi pimpinan program studi, laboratorium, dan dosen tetap.
+  </p>
+
+  <div class="grid-3">
+    <div class="profile-card">
+      <h3>Prof. Dr. Ridwan Sanjaya, S.E., S.Kom., MS.IEC</h3>
+      <p><strong>Jabatan:</strong> Dekan Fakultas Ilmu Komputer / Guru Besar Sistem Informasi</p>
+    </div>
+
+    <div class="profile-card">
+      <h3>Dr. Bernadinus Harnadi, S.T., M.T.</h3>
+      <p><strong>Jabatan:</strong> Wakil Dekan Fakultas Ilmu Komputer</p>
+    </div>
+
+    <div class="profile-card">
+      <h3>Dr. Albertus Dwiyoga Widiantoro, S.Kom., M.Kom.</h3>
+      <p><strong>Jabatan:</strong> Ketua Program Studi Sistem Informasi</p>
+    </div>
+
+    <div class="profile-card">
+      <h3>Andre Kurniawan Pamudji, S.Kom., M.Ling.</h3>
+      <p><strong>Jabatan:</strong> Sekretaris Program Studi Sistem Informasi</p>
+    </div>
+
+    <div class="profile-card">
+      <h3>Stephani Inggrit Swastini, S.Kom., MBA</h3>
+      <p><strong>Jabatan:</strong> Kepala Laboratorium Sistem Informasi</p>
+    </div>
+
+    <div class="profile-card">
+      <h3>Agus Cahyo Nugroho, S.Kom., M.T.</h3>
+      <p><strong>Jabatan:</strong> Dosen Sistem Informasi</p>
+    </div>
+
+    <div class="profile-card">
+      <h3>Erdhi Widyarto Nugroho, S.T., M.T.</h3>
+      <p><strong>Jabatan:</strong> Dosen Sistem Informasi</p>
+    </div>
+
+    <div class="profile-card">
+      <h3>Dr. T. Brenda Ch, S.T., M.T.</h3>
+      <p><strong>Jabatan:</strong> Dosen Sistem Informasi</p>
+    </div>
+
+    <div class="profile-card">
+      <h3>Fx. Hendra Prasetya, S.T., M.T.</h3>
+      <p><strong>Jabatan:</strong> Dosen Sistem Informasi</p>
+    </div>
+  </div>
+
+  <div class="glass-highlight">
+    Selain nama-nama di atas, masih ada staf akademik dan dosen lain termasuk:  
+    V. Eng Yennylawati, S.Kom., M.Kom.; Hinu Indrawardhana, M.Ars; Agustina Alam Anggitasari, S.E., M.M.; serta dosen-dosen lain yang mendukung penyelenggaraan SIEGA. :contentReference[oaicite:3]{index=3}
+  </div>
+</div>
+
+<?php
+include 'partials/footer.php';
+?>
