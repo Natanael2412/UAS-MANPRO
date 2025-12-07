@@ -460,36 +460,92 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
     </section>
 
     <section id="contact" class="py-16 md:py-24 bg-dark-bg border-t border-white/5">
-        <div class="max-w-2xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-8">Hubungi Kami</h2>
-            <div class="bg-glass-bg p-8 rounded-2xl border border-white/10 shadow-2xl">
-                <?php if ($contact_result): ?>
-                    <div
-                        class="mb-4 p-3 bg-green-500/20 border border-green-500/30 text-green-300 text-sm rounded-lg text-center">
-                        <?= $contact_result ?>
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-12">Hubungi Kami</h2>
+            
+            <div class="bg-glass-bg rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    
+                    <div class="p-8 md:p-10 space-y-8">
+                        
+                        <div class="w-full h-64 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                            <iframe 
+                                src="https://maps.app.goo.gl/UcayMcyYdWMgMB2V9" 
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
+                        <div class="space-y-6 text-sm text-text-muted">
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="p-2 bg-white/5 rounded-lg text-accent-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold mb-1">Jam Kerja</h4>
+                                    <p>Senin – Jumat<br>08.00 – 15.00 WIB</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="p-2 bg-white/5 rounded-lg text-accent-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold mb-1">Alamat</h4>
+                                    <p>Gedung Henricus Constant Lt 8 Unika Soegijapranata<br>
+                                    Jl. Pawiyatan Luhur IV/1, Bendan Duwur,<br>Semarang, Jawa Tengah 50234</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="p-2 bg-white/5 rounded-lg text-pink-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold mb-1">Kontak</h4>
+                                    <p class="mb-1">Email: <a href="mailto:si@unika.ac.id" class="text-accent-primary hover:underline">si@unika.ac.id</a></p>
+                                    <p>Hotline: <a href="https://wa.me/6281903385595" class="text-green-400 hover:underline">+62-819-0338-5595 (WA)</a></p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                <?php endif; ?>
-                <form action="#contact" method="POST" class="space-y-5" onsubmit="return validateContactForm()">
-                    <div>
-                        <label class="block text-sm text-text-muted mb-1">Nama Lengkap</label>
-                        <input type="text" id="cf-name" name="name" required
-                            class="w-full px-4 py-3 rounded-lg bg-black/20 border border-white/10 text-white focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
+
+                    <div class="p-8 md:p-10 border-t md:border-t-0 md:border-l border-white/10 bg-black/20 flex flex-col justify-center">
+                        
+                        <h3 class="text-xl font-bold text-white mb-6">Kirim Pesan</h3>
+
+                        <?php if ($contact_result) : ?>
+                            <div class="mb-6 p-4 bg-green-500/20 border border-green-500/30 text-green-300 text-sm rounded-xl text-center">
+                                <?= $contact_result ?>
+                            </div>
+                        <?php endif; ?>
+                        
+                        <form action="#contact" method="POST" class="space-y-5" onsubmit="return validateContactForm()">
+                            <div>
+                                <label class="block text-sm font-medium text-text-muted mb-2">Nama Lengkap</label>
+                                <input type="text" id="cf-name" name="name" required placeholder="Masukkan nama Anda"
+                                       class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-text-muted mb-2">Email</label>
+                                <input type="email" id="cf-email" name="email" required placeholder="email@contoh.com"
+                                       class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-text-muted mb-2">Pesan</label>
+                                <textarea id="cf-message" name="message" rows="4" required placeholder="Tulis pesan Anda di sini..."
+                                          class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition resize-none"></textarea>
+                            </div>
+                            <button type="submit" name="contact_submit" 
+                                    class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-accent-primary to-accent-secondary hover:shadow-lg hover:shadow-accent-primary/25 transition transform hover:-translate-y-1">
+                                Kirim Pesan
+                            </button>
+                        </form>
                     </div>
-                    <div>
-                        <label class="block text-sm text-text-muted mb-1">Email</label>
-                        <input type="email" id="cf-email" name="email" required
-                            class="w-full px-4 py-3 rounded-lg bg-black/20 border border-white/10 text-white focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
-                    </div>
-                    <div>
-                        <label class="block text-sm text-text-muted mb-1">Pesan</label>
-                        <textarea id="cf-message" name="message" rows="4" required
-                            class="w-full px-4 py-3 rounded-lg bg-black/20 border border-white/10 text-white focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition"></textarea>
-                    </div>
-                    <button type="submit" name="contact_submit"
-                        class="w-full py-3 rounded-xl font-bold text-white bg-gradient-to-r from-accent-primary to-accent-secondary hover:shadow-lg hover:shadow-accent-primary/25 transition transform hover:-translate-y-1">
-                        Kirim Pesan
-                    </button>
-                </form>
+
+                </div>
             </div>
         </div>
     </section>
