@@ -73,11 +73,13 @@ $title = $title ?? 'Jurusan Sistem Informasi';
   
   <header class="sticky top-0 backdrop-blur-lg bg-dark-bg/80 border-b border-white/5 z-50 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a class="text-2xl font-extrabold tracking-wider text-white hover:opacity-80 transition" href="/">
+      <a class="text-2xl md:text-3xl font-extrabold leading-tight tracking-tight bg-gradient-to-r from-blue-300 via-teal-300 to-accent-primary bg-clip-text text-transparent mb-1" href="/">
         Sistem Informasi
       </a>
-      
-      <nav class="hidden md:flex space-x-1" id="main-nav">
+
+      <?php if (!isset($hide_menu) || !$hide_menu): ?>
+          <nav class="hidden md:flex space-x-1" id="main-nav">
+            <nav class="hidden md:flex space-x-1" id="main-nav">
         <?php 
         $navItems = [
             '#about' => 'Tentang',
@@ -91,7 +93,13 @@ $title = $title ?? 'Jurusan Sistem Informasi';
             <?= $label ?>
           </a>
         <?php endforeach; ?>
-      </nav>
+            </nav>
+      <?php endif; ?>
+
+      <?php if (!isset($hide_menu) || !$hide_menu): ?>
+          <button id="nav-toggle" aria-label="Toggle navigation" class="md:hidden ...">
+            </button>
+      <?php endif; ?>
 
       <button id="nav-toggle" aria-label="Toggle navigation" class="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
