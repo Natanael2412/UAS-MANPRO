@@ -2,8 +2,7 @@
 $title = $title ?? 'Jurusan Sistem Informasi';
 ?>
 <!doctype html>
-<html lang="id" style="scroll-behavior: smooth;"> 
-<head>
+<html lang="id"> <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title><?= $title ?></title>
@@ -11,73 +10,100 @@ $title = $title ?? 'Jurusan Sistem Informasi';
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist&family=Geist+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
   
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // Konfigurasi Kustom Tailwind
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+            sans: ['Geist', 'sans-serif'],
+            mono: ['Geist Mono', 'monospace'],
+          },
           colors: {
+            'dark-bg': '#0f1724', 
             'accent-primary': '#7b61ff', 
             'accent-secondary': '#29d8a0',
-            'glass-bg': 'rgba(255, 255, 255, 0.06)',
-            'dark-bg': '#0f1724', 
             'text-light': '#eef2ff', 
             'text-muted': '#a8b3c7', 
+          },
+          backgroundImage: {
+            'main-gradient': 'radial-gradient(circle at 20% 20%, #0c1631 0%, #091021 40%, #01030a 100%)',
+          },
+          boxShadow: {
+            'glass': '0 10px 50px rgba(0,0,0,0.25)',
+            'neon': '0 0 20px rgba(123,97,255,0.3)',
           }
         }
       }
     }
   </script>
 
+  <html lang="id"> 
+
+<head>
   <style>
-    body {
-      /* Font Geist Sans diterapkan ke seluruh body */
-      font-family: 'Geist', sans-serif; 
-      background: radial-gradient(circle at 20% 20%, #0c1631 0%, #091021 40%, #01030a 100%);
-      color: theme('colors.text-light');
-      line-height: 1.7;
-    }
-    /* Opsional: Terapkan Geist Mono untuk tampilan teknis/kode */
-    .font-mono {
-        font-family: 'Geist Mono', monospace;
+    html.lenis, html.lenis body {
+      height: auto;
     }
     
-    .brand-gradient {
-        background-image: linear-gradient(to right, #9eaaff, #65fbd2);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    .lenis.lenis-smooth {
+      scroll-behavior: auto !important; /* MEMATIKAN smooth scroll bawaan browser secara paksa */
     }
-    .accent-gradient-text {
-        background-image: linear-gradient(135deg, #7b61ff 0%, #29d8a0 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    
+    .lenis.lenis-smooth [data-lenis-prevent] {
+      overscroll-behavior: contain;
     }
-    .glass-shadow {
-        box-shadow: 0 10px 50px rgba(0,0,0,0.25);
+    
+    .lenis.lenis-stopped {
+      overflow: hidden;
     }
-    html {
-        scroll-behavior: smooth !important;
+    
+    .lenis.lenis-scrolling iframe {
+      pointer-events: none;
     }
   </style>
 </head>
-<body data-lenis-prevent>
-  <header class="site-header sticky top-0 backdrop-blur-lg bg-dark-bg/50 border-b border-white/5 z-50">
+</head>
+<body class="font-sans bg-dark-bg text-text-light antialiased leading-relaxed bg-[url('')] bg-no-repeat bg-fixed" style="background-image: radial-gradient(circle at 20% 20%, #0c1631 0%, #091021 40%, #01030a 100%);">
+  
+  <header class="sticky top-0 backdrop-blur-lg bg-dark-bg/80 border-b border-white/5 z-50 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a class="text-2xl font-extrabold tracking-wider no-underline text-white transition duration-300 hover:opacity-70" href="/">Sistem Informasi</a>
-      <nav class="hidden md:flex space-x-4" id="main-nav">
-        <a href="#about" class="px-3 py-2 rounded-lg no-underline text-text-muted transition duration-250 hover:bg-glass-bg hover:text-text-light hover:transform hover:-translate-y-0.5">Tentang</a>
-        <a href="#curriculum" class="px-3 py-2 rounded-lg no-underline text-text-muted transition duration-250 hover:bg-glass-bg hover:text-text-light hover:transform hover:-translate-y-0.5">Kurikulum</a>
-        <a href="#faculty" class="px-3 py-2 rounded-lg no-underline text-text-muted transition duration-250 hover:bg-glass-bg hover:text-text-light hover:transform hover:-translate-y-0.5">Dosen</a>
-        <a href="#projects" class="px-3 py-2 rounded-lg no-underline text-text-muted transition duration-250 hover:bg-glass-bg hover:text-text-light hover:transform hover:-translate-y-0.5">Proyek</a>
-        <a href="#contact" class="px-3 py-2 rounded-lg no-underline text-text-muted transition duration-250 hover:bg-glass-bg hover:text-text-light hover:transform hover:-translate-y-0.5">Kontak</a>
+      <a class="text-2xl font-extrabold tracking-wider text-white hover:opacity-80 transition" href="/">
+        Sistem Informasi
+      </a>
+      
+      <nav class="hidden md:flex space-x-1" id="main-nav">
+        <?php 
+        $navItems = [
+            '#about' => 'Tentang',
+            '#curriculum' => 'Kurikulum',
+            '#faculty' => 'Dosen',
+            '#projects' => 'Proyek',
+            '#contact' => 'Kontak'
+        ];
+        foreach ($navItems as $link => $label): ?>
+          <a href="<?= $link ?>" class="px-4 py-2 rounded-lg text-sm font-medium text-text-muted hover:bg-white/5 hover:text-white transition-all duration-200">
+            <?= $label ?>
+          </a>
+        <?php endforeach; ?>
       </nav>
-      <button id="nav-toggle" aria-label="Toggle navigation" class="md:hidden text-text-light text-2xl bg-transparent border-none cursor-pointer">
-        &#8801;
+
+      <button id="nav-toggle" aria-label="Toggle navigation" class="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
       </button>
+    </div>
+    
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-dark-bg border-b border-white/5 shadow-2xl p-4 flex flex-col space-y-2">
+       <?php foreach ($navItems as $link => $label): ?>
+          <a href="<?= $link ?>" class="block px-4 py-3 rounded-lg text-text-muted hover:bg-white/5 hover:text-white transition">
+            <?= $label ?>
+          </a>
+        <?php endforeach; ?>
     </div>
   </header>

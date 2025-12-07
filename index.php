@@ -29,7 +29,7 @@ $contact_result = 'Harap isi semua bidang dengan benar.';
 <main class="max-w-7xl mx-auto px-4"> 
     <section class="min-h-screen pt-24 pb-12 flex flex-col md:grid md:grid-cols-12 gap-8 items-center justify-center">
         <div class="md:col-span-7 space-y-4" data-aos="fade-right">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mt-0 brand-gradient leading-tight">Jurusan Sistem Informasi</h1>
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-blue-300 to-teal-300 bg-clip-text text-transparent">Jurusan Sistem Informasi</h1>
             <p class="text-lg md:text-xl text-text-muted max-w-xl">Menggabungkan teknologi, bisnis, dan analisis untuk membentuk pengubah digital masa depan.</p>
             <div class="flex space-x-4 pt-4" data-aos="fade-right" data-aos-delay="200">
                 <a href="#about" class="px-5 py-3 rounded-xl font-semibold no-underline text-white bg-gradient-to-r from-accent-primary to-accent-secondary shadow-lg shadow-accent-primary/30 transition duration-250 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-accent-primary/50">Pelajari Lebih Lanjut</a>
