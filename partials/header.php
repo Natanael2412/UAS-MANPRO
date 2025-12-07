@@ -13,14 +13,14 @@
 <body>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="/">Sistem Informasi</a>
-      <nav class="nav" id="main-nav">
-        <a href="#about">Tentang</a>
-        <a href="#curriculum">Kurikulum</a>
-        <a href="#faculty">Dosen</a>
-        <a href="#projects">Proyek</a>
-        <a href="#contact">Kontak</a>
-      </nav>
+      <a class="brand" href="index.php">Sistem Informasi</a>
+     <nav class="nav" id="main-nav">
+      <a href="tentang.php">Tentang</a>
+      <a href="kurikulum.php">Kurikulum</a>
+      <a href="dosen.php">Dosen</a>
+      <a href="proyek.php">Proyek</a>
+      <a href="kontak.php">Kontak</a>
+    </nav>
       <button id="nav-toggle" aria-label="Toggle navigation">≡</button>
     </div>
   </header>
