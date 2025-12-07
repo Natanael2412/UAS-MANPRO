@@ -317,20 +317,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         <li>Deteksi Gerak</li>
                     </ul>
                 </div>
-                <div class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-yellow-400/50 transition duration-300 hover:-translate-y-2">
-    <div class="text-4xl mb-4 group-hover:scale-110 transition">📊</div>
-    <h3 class="text-xl font-bold text-white mb-2">AKSI (Akuntansi + SI)</h3>
-    <p class="text-sm text-text-muted mb-4">Program ganda yang menggabungkan keahlian Akuntansi keuangan dengan teknologi sistem informasi modern.</p>
-    <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
-        <li>Sistem Informasi Akuntansi (SIA)</li>
-        <li>Komputerisasi Akuntansi & Perpajakan</li>
-        <li>Audit Sistem Informasi Keuangan</li>
-        <li>Analisis Data Keuangan Digital</li>
-        <li>Manajemen Risiko Teknologi Finansial</li>
-    </ul>
-</div>
-        </div>
-        <p class="text-text-muted mb-12 max-w-2xl mx-auto">Mahasiswa dapat memilih konsentrasi sesuai minat baik
+                <div
+                    class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-yellow-400/50 transition duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition">📊</div>
+                    <h3 class="text-xl font-bold text-white mb-2">AKSI (Akuntansi + SI)</h3>
+                    <p class="text-sm text-text-muted mb-4">Program ganda yang menggabungkan keahlian Akuntansi keuangan
+                        dengan teknologi sistem informasi modern.</p>
+                    <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
+                        <li>Sistem Informasi Akuntansi (SIA)</li>
+                        <li>Komputerisasi Akuntansi & Perpajakan</li>
+                        <li>Audit Sistem Informasi Keuangan</li>
+                        <li>Analisis Data Keuangan Digital</li>
+                        <li>Manajemen Risiko Teknologi Finansial</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-text-muted mb-12 max-w-2xl mx-auto">Mahasiswa dapat memilih konsentrasi sesuai minat baik
                 Sistem Informasi , E-Commerce, Game Technology maupun AKSI sehingga lulusan siap menghadapi berbagai
                 bidang industri TI, bisnis, dan kreatif.</p>
     </section>
@@ -338,32 +340,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
     <section id="faculty" class="py-16 md:py-24 bg-dark-bg">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-10">Dosen & Staf Ahli</h2>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <div class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-accent-primary/50 transition duration-300 hover:-translate-y-2">
-                    <div class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-accent-primary/50 transition">
-                        <img src="assets/img/dosen-ridwan.jpg" alt="Prof. Ridwan" class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
+
+                <div
+                    class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-accent-primary/50 transition duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-accent-primary/50 transition">
+                        <img src="assets/img/dosen-ridwan.jpg" alt="Prof. Ridwan"
+                            class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-1 leading-tight">Prof. Dr. Ridwan Sanjaya, S.E., S.Kom., MS.IEC</h3>
+                    <h3 class="text-lg font-bold text-white mb-1 leading-tight">Prof. Dr. Ridwan Sanjaya, S.E., S.Kom.,
+                        MS.IEC</h3>
                     <div class="h-0.5 w-12 bg-accent-primary mx-auto my-3"></div>
                     <p class="text-text-muted text-sm">Dekan Fakultas Ilmu Komputer / Guru Besar Sistem Informasi</p>
                 </div>
 
-                <div class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-accent-secondary/50 transition duration-300 hover:-translate-y-2">
-                    <div class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-accent-secondary/50 transition">
-                        <img src="assets/img/dosen-bernadinus.jpg" alt="Dr. Bernadinus" class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
+                <div
+                    class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-accent-secondary/50 transition duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-accent-secondary/50 transition">
+                        <img src="assets/img/dosen-bernadinus.jpg" alt="Dr. Bernadinus"
+                            class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
                     </div>
                     <h3 class="text-lg font-bold text-white mb-1 leading-tight">Dr. Bernadinus Harnadi, S.T., M.T.</h3>
                     <div class="h-0.5 w-12 bg-accent-secondary mx-auto my-3"></div>
                     <p class="text-text-muted text-sm">Wakil Dekan Fakultas Ilmu Komputer</p>
                 </div>
 
-                <div class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-pink-500/50 transition duration-300 hover:-translate-y-2">
-                    <div class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-pink-500/50 transition">
-                        <img src="assets/img/dosen-albertus.jpg" alt="Dr. Albertus" class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
+                <div
+                    class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-pink-500/50 transition duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-pink-500/50 transition">
+                        <img src="assets/img/dosen-albertus.jpg" alt="Dr. Albertus"
+                            class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-1 leading-tight">Dr. Albertus Dwiyoga Widiantoro, S.Kom., M.Kom.</h3>
+                    <h3 class="text-lg font-bold text-white mb-1 leading-tight">Dr. Albertus Dwiyoga Widiantoro, S.Kom.,
+                        M.Kom.</h3>
                     <div class="h-0.5 w-12 bg-pink-500 mx-auto my-3"></div>
                     <p class="text-text-muted text-sm">Ketua Program Studi Sistem Informasi</p>
                 </div>
@@ -371,7 +384,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
             </div>
 
             <div class="text-center mt-12">
-                <a href="dosen.php" class="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-white/20 bg-white/5 text-white hover:bg-white/10 hover:border-accent-primary hover:scale-105 transition-all duration-300 group">
+                <a href="dosen.php"
+                    class="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-white/20 bg-white/5 text-white hover:bg-white/10 hover:border-accent-primary hover:scale-105 transition-all duration-300 group">
                     Lihat Seluruh Dosen & Staf
                     <span class="group-hover:translate-x-1 transition">&rarr;</span>
                 </a>
@@ -462,24 +476,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
     <section id="contact" class="py-16 md:py-24 bg-dark-bg border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-12">Hubungi Kami</h2>
-            
+
             <div class="bg-glass-bg rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
                 <div class="grid grid-cols-1 md:grid-cols-2">
-                    
+
                     <div class="p-8 md:p-10 space-y-8">
-                        
+
                         <div class="w-full h-64 rounded-xl overflow-hidden border border-white/10 shadow-lg">
-                            <iframe 
-                                src="https://maps.app.goo.gl/UcayMcyYdWMgMB2V9" 
-                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.877664176531!2d110.40064657618629!3d-7.023663392978041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bab00d3e8e7%3A0xbcd9046f4a49cf15!2sSIEGA%20Unika%20Soegijapranata!5e0!3m2!1sen!2sid!4v1765123280822!5m2!1sen!2sid" width="100%" height="100%"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                         </div>
 
                         <div class="space-y-6 text-sm text-text-muted">
-                            
+
                             <div class="flex items-start gap-4">
                                 <div class="p-2 bg-white/5 rounded-lg text-accent-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg>
                                 </div>
                                 <div>
                                     <h4 class="text-white font-bold mb-1">Jam Kerja</h4>
@@ -489,57 +508,73 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
                             <div class="flex items-start gap-4">
                                 <div class="p-2 bg-white/5 rounded-lg text-accent-secondary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
                                 </div>
                                 <div>
                                     <h4 class="text-white font-bold mb-1">Alamat</h4>
                                     <p>Gedung Henricus Constant Lt 8 Unika Soegijapranata<br>
-                                    Jl. Pawiyatan Luhur IV/1, Bendan Duwur,<br>Semarang, Jawa Tengah 50234</p>
+                                        Jl. Pawiyatan Luhur IV/1, Bendan Duwur,<br>Semarang, Jawa Tengah 50234</p>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-4">
                                 <div class="p-2 bg-white/5 rounded-lg text-pink-400">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg>
                                 </div>
                                 <div>
                                     <h4 class="text-white font-bold mb-1">Kontak</h4>
-                                    <p class="mb-1">Email: <a href="mailto:si@unika.ac.id" class="text-accent-primary hover:underline">si@unika.ac.id</a></p>
-                                    <p>Hotline: <a href="https://wa.me/6281903385595" class="text-green-400 hover:underline">+62-819-0338-5595 (WA)</a></p>
+                                    <p class="mb-1">Email: <a href="mailto:si@unika.ac.id"
+                                            class="text-accent-primary hover:underline">si@unika.ac.id</a></p>
+                                    <p>Hotline: <a href="https://wa.me/6281903385595"
+                                            class="text-green-400 hover:underline">+62-819-0338-5595 (WA)</a></p>
                                 </div>
                             </div>
 
                         </div>
                     </div>
 
-                    <div class="p-8 md:p-10 border-t md:border-t-0 md:border-l border-white/10 bg-black/20 flex flex-col justify-center">
-                        
+                    <div
+                        class="p-8 md:p-10 border-t md:border-t-0 md:border-l border-white/10 bg-black/20 flex flex-col justify-center">
+
                         <h3 class="text-xl font-bold text-white mb-6">Kirim Pesan</h3>
 
-                        <?php if ($contact_result) : ?>
-                            <div class="mb-6 p-4 bg-green-500/20 border border-green-500/30 text-green-300 text-sm rounded-xl text-center">
+                        <?php if ($contact_result): ?>
+                            <div
+                                class="mb-6 p-4 bg-green-500/20 border border-green-500/30 text-green-300 text-sm rounded-xl text-center">
                                 <?= $contact_result ?>
                             </div>
                         <?php endif; ?>
-                        
+
                         <form action="#contact" method="POST" class="space-y-5" onsubmit="return validateContactForm()">
                             <div>
                                 <label class="block text-sm font-medium text-text-muted mb-2">Nama Lengkap</label>
                                 <input type="text" id="cf-name" name="name" required placeholder="Masukkan nama Anda"
-                                       class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
+                                    class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-text-muted mb-2">Email</label>
                                 <input type="email" id="cf-email" name="email" required placeholder="email@contoh.com"
-                                       class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
+                                    class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-text-muted mb-2">Pesan</label>
-                                <textarea id="cf-message" name="message" rows="4" required placeholder="Tulis pesan Anda di sini..."
-                                          class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition resize-none"></textarea>
+                                <textarea id="cf-message" name="message" rows="4" required
+                                    placeholder="Tulis pesan Anda di sini..."
+                                    class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition resize-none"></textarea>
                             </div>
-                            <button type="submit" name="contact_submit" 
-                                    class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-accent-primary to-accent-secondary hover:shadow-lg hover:shadow-accent-primary/25 transition transform hover:-translate-y-1">
+                            <button type="submit" name="contact_submit"
+                                class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-accent-primary to-accent-secondary hover:shadow-lg hover:shadow-accent-primary/25 transition transform hover:-translate-y-1">
                                 Kirim Pesan
                             </button>
                         </form>
