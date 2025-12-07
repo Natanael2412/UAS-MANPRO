@@ -2,7 +2,8 @@
 $title = $title ?? 'Jurusan Sistem Informasi';
 ?>
 <!doctype html>
-<html lang="id"> <head>
+<html lang="id"> 
+  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title><?= $title ?></title>
@@ -13,7 +14,7 @@ $title = $title ?? 'Jurusan Sistem Informasi';
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
   
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {

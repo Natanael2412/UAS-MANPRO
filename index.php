@@ -48,6 +48,71 @@ $contact_result = 'Harap isi semua bidang dengan benar.';
         </div>
     </section>
 
+    <section class="py-10 relative overflow-hidden" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 relative group">
+            
+            <h3 class="text-white/80 font-bold mb-6 text-xl pl-2 border-l-4 border-accent-secondary">
+                Spotlight Kegiatan & Fasilitas
+            </h3>
+
+            <button class="swiper-button-prev-custom absolute top-1/2 left-0 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center rounded-full bg-dark-bg/80 border border-white/10 text-white shadow-lg hover:bg-accent-primary transition opacity-0 group-hover:opacity-100 -ml-4 md:-ml-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button class="swiper-button-next-custom absolute top-1/2 right-0 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center rounded-full bg-dark-bg/80 border border-white/10 text-white shadow-lg hover:bg-accent-primary transition opacity-0 group-hover:opacity-100 -mr-4 md:-mr-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+
+            <div class="swiper mySwiper w-full h-full pb-12">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide h-auto">
+                        <div class="h-64 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-6 flex flex-col justify-end hover:bg-white/10 transition duration-300 group cursor-grab active:cursor-grabbing">
+                            <div class="absolute top-4 right-4 p-3 bg-accent-primary/20 rounded-full text-accent-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-2">Laboratorium AI</h4>
+                            <p class="text-text-muted text-sm">Fasilitas komputer spesifikasi tinggi untuk riset Deep Learning.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide h-auto">
+                        <div class="h-64 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-6 flex flex-col justify-end hover:bg-white/10 transition duration-300 cursor-grab active:cursor-grabbing">
+                            <div class="absolute top-4 right-4 p-3 bg-accent-secondary/20 rounded-full text-accent-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-2">Magang Industri</h4>
+                            <p class="text-text-muted text-sm">Kerjasama dengan 50+ perusahaan teknologi top nasional.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide h-auto">
+                        <div class="h-64 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-6 flex flex-col justify-end hover:bg-white/10 transition duration-300 cursor-grab active:cursor-grabbing">
+                            <div class="absolute top-4 right-4 p-3 bg-yellow-500/20 rounded-full text-yellow-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-2">Juara Kompetisi</h4>
+                            <p class="text-text-muted text-sm">Mahasiswa kami rutin menjuarai Hackathon & Gemastik.</p>
+                        </div>
+                    </div>
+
+                     <div class="swiper-slide h-auto">
+                        <div class="h-64 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-6 flex flex-col justify-end hover:bg-white/10 transition duration-300 cursor-grab active:cursor-grabbing">
+                            <div class="absolute top-4 right-4 p-3 bg-pink-500/20 rounded-full text-pink-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-2">Sertifikasi Global</h4>
+                            <p class="text-text-muted text-sm">Lulusan dibekali sertifikasi Oracle, Microsoft, dan Cisco.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+
     <section id="about" class="py-16 md:py-24" data-aos="fade-up">
         <div class="max-w-4xl mx-auto p-6 md:p-8 bg-glass-bg backdrop-blur-xl rounded-2xl glass-shadow border border-white/10 text-text-light">
             <h1 class="text-3xl md:text-4xl font-extrabold mb-6 accent-gradient-text">Tentang Program Studi Sistem Informasi Unika Soegijapranata Semarang</h1>
