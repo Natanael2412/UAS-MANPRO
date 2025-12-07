@@ -17,6 +17,6 @@
       <p class="copyright">© <?=date('Y')?> Jurusan Sistem Informasi — Semua hak dilindungi.</p>
     </div>
   </footer>
-  <script src="script.js" defer></script>
+  <script src="js/script.js" defer></script> 
 </body>
 </html>

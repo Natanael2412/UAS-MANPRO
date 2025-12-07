@@ -56,5 +56,11 @@ $contact_result = 'Harap isi semua bidang dengan benar.';
 <div>
 <h3>Visi & Misi</h3>
 <p><strong>Visi:</strong> Menjadi jurusan unggul dalam pendidikan sistem informasi yang inovatif dan beretika.</p>
-<p><strong>Misi:</strong></p>
-<?php require __DIR__ . '/partials/footer.php'; ?>
+<p><strong>Misi:</strong> Menyelenggarakan pendidikan yang berkualitas, melakukan penelitian yang bermanfaat, dan pengabdian masyarakat.</p>
+<p>Untuk detail Visi dan Misi Program Studi secara lengkap, <a href="tentang.php" style="color: var(--accent2); font-weight: 600;">kunjungi halaman Tentang Prodi.</a></p>
+</div>
+</section>
+</main>
+<?php
+require __DIR__ . '/partials/footer.php';
+?>

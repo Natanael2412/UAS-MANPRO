@@ -15,12 +15,13 @@
     <div class="wrap">
       <a class="brand" href="/">Sistem Informasi</a>
       <nav class="nav" id="main-nav">
-        <a href="#about">Tentang</a>
-        <a href="#curriculum">Kurikulum</a>
-        <a href="#faculty">Dosen</a>
+        <a href="tentang.php">Tentang</a>     
+        <a href="kurikulum.php">Kurikulum</a> 
+        <a href="dosen.php">Dosen</a>         
         <a href="#projects">Proyek</a>
         <a href="#contact">Kontak</a>
       </nav>
+...
       <button id="nav-toggle" aria-label="Toggle navigation">≡</button>
     </div>
   </header>
