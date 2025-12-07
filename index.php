@@ -338,44 +338,44 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
     <section id="faculty" class="py-16 md:py-24 bg-dark-bg">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-10">Dosen & Staf Ahli</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div
-                    class="p-6 rounded-2xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition group">
-                    <div
-                        class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-white/20 group-hover:border-accent-primary transition">
-                        <img src="https://ui-avatars.com/api/?name=Ridwan+Sanjaya&background=random" alt="Dosen"
-                            class="w-full h-full object-cover">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-accent-primary/50 transition duration-300 hover:-translate-y-2">
+                    <div class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-accent-primary/50 transition">
+                        <img src="assets/img/dosen-ridwan.jpg" alt="Prof. Ridwan" class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
                     </div>
-                    <h3 class="text-lg font-bold text-white">Prof. Dr. Ridwan Sanjaya</h3>
-                    <p class="text-accent-primary text-sm font-medium">Dekan Fakultas</p>
+                    <h3 class="text-lg font-bold text-white mb-1 leading-tight">Prof. Dr. Ridwan Sanjaya, S.E., S.Kom., MS.IEC</h3>
+                    <div class="h-0.5 w-12 bg-accent-primary mx-auto my-3"></div>
+                    <p class="text-text-muted text-sm">Dekan Fakultas Ilmu Komputer / Guru Besar Sistem Informasi</p>
                 </div>
-                <div
-                    class="p-6 rounded-2xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition group">
-                    <div
-                        class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-white/20 group-hover:border-accent-secondary transition">
-                        <img src="https://ui-avatars.com/api/?name=Bernadinus+Harnadi&background=random" alt="Dosen"
-                            class="w-full h-full object-cover">
+
+                <div class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-accent-secondary/50 transition duration-300 hover:-translate-y-2">
+                    <div class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-accent-secondary/50 transition">
+                        <img src="assets/img/dosen-bernadinus.jpg" alt="Dr. Bernadinus" class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
                     </div>
-                    <h3 class="text-lg font-bold text-white">Dr. Bernadinus Harnadi</h3>
-                    <p class="text-accent-secondary text-sm font-medium">Wakil Dekan</p>
+                    <h3 class="text-lg font-bold text-white mb-1 leading-tight">Dr. Bernadinus Harnadi, S.T., M.T.</h3>
+                    <div class="h-0.5 w-12 bg-accent-secondary mx-auto my-3"></div>
+                    <p class="text-text-muted text-sm">Wakil Dekan Fakultas Ilmu Komputer</p>
                 </div>
-                <div
-                    class="p-6 rounded-2xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition group">
-                    <div
-                        class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-white/20 group-hover:border-pink-400 transition">
-                        <img src="https://ui-avatars.com/api/?name=Albertus+Dwiyoga&background=random" alt="Dosen"
-                            class="w-full h-full object-cover">
+
+                <div class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-pink-500/50 transition duration-300 hover:-translate-y-2">
+                    <div class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-pink-500/50 transition">
+                        <img src="assets/img/dosen-albertus.jpg" alt="Dr. Albertus" class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
                     </div>
-                    <h3 class="text-lg font-bold text-white">Dr. Albertus Dwiyoga</h3>
-                    <p class="text-pink-400 text-sm font-medium">Ketua Program Studi</p>
+                    <h3 class="text-lg font-bold text-white mb-1 leading-tight">Dr. Albertus Dwiyoga Widiantoro, S.Kom., M.Kom.</h3>
+                    <div class="h-0.5 w-12 bg-pink-500 mx-auto my-3"></div>
+                    <p class="text-text-muted text-sm">Ketua Program Studi Sistem Informasi</p>
                 </div>
+
             </div>
-            <div class="text-center mt-8">
-    <a href="dosen.php" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 bg-white/5 text-white hover:bg-white/10 hover:border-accent-primary transition-all duration-300">
-        Lihat Seluruh Dosen & Staf
-        <span>&rarr;</span>
-    </a>
-</div>
+
+            <div class="text-center mt-12">
+                <a href="dosen.php" class="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-white/20 bg-white/5 text-white hover:bg-white/10 hover:border-accent-primary hover:scale-105 transition-all duration-300 group">
+                    Lihat Seluruh Dosen & Staf
+                    <span class="group-hover:translate-x-1 transition">&rarr;</span>
+                </a>
+            </div>
         </div>
     </section>
 
