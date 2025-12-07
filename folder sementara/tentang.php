@@ -2,6 +2,7 @@
 $title = "Tentang Prodi";
 include 'partials/header.php';
 ?>
+<link rel="stylesheet" href="tentang.css"> 
 
 <div class="about-wrapper">
     <h1 class="about-title">Tentang Program Studi Sistem Informasi Unika Soegijapranata Semarang</h1>
