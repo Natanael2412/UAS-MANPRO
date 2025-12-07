@@ -4,17 +4,18 @@
       <div class="space-y-4">
         <h4 class="text-white font-bold text-lg">Sistem Informasi</h4>
         <p class="text-text-muted text-sm leading-relaxed">
-          Alamat kampus — Jl. Contoh No.1, Kota.<br>
-          Telepon: (021) xxx-xxxx
+        <p>Gedung Henricus Constant Lt 8 Unika Soegijapranata<br>
+          Jl. Pawiyatan Luhur IV/1, Bendan Duwur,<br>Semarang, Jawa Tengah 50234
+          <br>Telepon: +62-819-0338-5595 (WA)
         </p>
       </div>
 
       <div class="space-y-4">
         <h4 class="text-white font-bold text-lg">Ikuti Kami</h4>
         <div class="flex flex-col space-y-2 text-text-muted text-sm">
-          <a href="#" class="hover:text-accent-secondary transition">Instagram</a>
-          <a href="#" class="hover:text-accent-secondary transition">LinkedIn</a>
-          <a href="#" class="hover:text-accent-secondary transition">YouTube</a>
+          <a href="https://www.instagram.com/siega_unika?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="hover:text-accent-secondary transition">Instagram</a>
+          <a href="https://youtube.com/@siegaunikasoegijapranata8217?si=GlrxAk30G3P1Go4L" class="hover:text-accent-secondary transition">YouTube</a>
+          <a href="https://www.tiktok.com/@siega_unika?is_from_webapp=1&sender_device=pc" class="hover:text-accent-secondary transition">Tiktok</a>
         </div>
       </div>
 

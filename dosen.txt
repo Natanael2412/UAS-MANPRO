@@ -1,15 +1,3 @@
-<?php
-$title = "Dosen";
-include 'partials/header.php';
-?>
-<link rel="stylesheet" href="style2.css">
-
-<div class="page-section">
-  <h1 class="page-title">Dosen & Staf Akademik SIEGA</h1>
-
-  <p class="page-desc">
-    Berikut adalah beberapa nama dosen dan staf pengajar di Program Studi Sistem Informasi (SIEGA) — meliputi pimpinan program studi, laboratorium, dan dosen tetap.
-  </p>
 
   <div class="grid-3">
     <div class="profile-card">
@@ -63,7 +51,3 @@ include 'partials/header.php';
     V. Eng Yennylawati, S.Kom., M.Kom.; Hinu Indrawardhana, M.Ars; Agustina Alam Anggitasari, S.E., M.M.; serta dosen-dosen lain yang mendukung penyelenggaraan SIEGA. :contentReference[oaicite:3]{index=3}
   </div>
 </div>
-
-<?php
-include 'partials/footer.php';
-?>
