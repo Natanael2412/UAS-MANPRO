@@ -8,9 +8,6 @@ require 'partials/header.php';
     <div class="max-w-7xl mx-auto px-4">
         
         <div class="text-center mb-16 space-y-4" data-aos="fade-up">
-            <a href="index.php" class="inline-flex items-center text-sm text-text-muted hover:text-white transition mb-4">
-                &larr; Kembali ke Beranda
-            </a>
             <h1 class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-300 via-teal-300 to-accent-primary bg-clip-text text-transparent">
                 Dosen & Staf Akademik
             </h1>
@@ -19,7 +16,7 @@ require 'partials/header.php';
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             
             <?php
             // Array Data Dosen (Agar kodingan rapi dan mudah diedit)
@@ -106,7 +103,6 @@ require 'partials/header.php';
                 serta dosen-dosen lain yang mendukung penyelenggaraan SIEGA.
             </p>
         </div>
-
     </div>
 </main>
 
