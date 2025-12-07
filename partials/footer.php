@@ -17,6 +17,25 @@
       <p class="copyright">© <?=date('Y')?> Jurusan Sistem Informasi — Semua hak dilindungi.</p>
     </div>
   </footer>
-  <script src="js/script.js" defer></script> 
+  
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+  <script>
+    var scroll = new SmoothScroll('#main-nav a[href*="#"], .cta-group a[href*="#"]', {
+        speed: 1200, 
+        easing: 'easeInOutCubic',
+        offset: 100 
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, // Durasi Animasi
+      once: true // Animasi hanya terjadi satu kali per elemen saat discroll
+    });
+  </script>
+  
+  <script src="js/script.js"></script>
 </body>
 </html>
