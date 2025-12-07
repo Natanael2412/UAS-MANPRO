@@ -50,28 +50,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                 Fakultas Ilmu Komputer
             </span>
             <h1 class="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight bg-gradient-to-r from-blue-300 via-teal-300 to-accent-primary bg-clip-text text-transparent mb-1">
-                Jurusan Sistem Informasi
+                SIEGA
             </h1>
             <p class="text-xs md:text-sm text-text-muted max-w-lg mx-auto">
-                Mencetak technopreneur masa depan dengan skill Bisnis & Data.
+                Menggabungkan teknologi, bisnis, dan analisis untuk membentuk pengubah digital masa depan.
             </p>
-        </div>
-
-        <div class="flex-none px-4 py-3 z-10">
-            <div class="max-w-4xl mx-auto grid grid-cols-3 gap-3">
-                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-2 text-center hover:bg-white/10 transition cursor-default">
-                    <div class="text-lg md:text-xl mb-1">⚖️</div>
-                    <h3 class="text-[10px] md:text-xs font-bold text-white uppercase">Kurikulum Seimbang</h3>
-                </div>
-                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-2 text-center hover:bg-white/10 transition cursor-default">
-                    <div class="text-lg md:text-xl mb-1">🤝</div>
-                    <h3 class="text-[10px] md:text-xs font-bold text-white uppercase">Mitra Industri</h3>
-                </div>
-                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-2 text-center hover:bg-white/10 transition cursor-default">
-                    <div class="text-lg md:text-xl mb-1">🚀</div>
-                    <h3 class="text-[10px] md:text-xs font-bold text-white uppercase">Proyek Nyata</h3>
-                </div>
-            </div>
         </div>
 
         <div class="flex-1 w-full relative min-h-0">
@@ -87,11 +70,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                 <div class="swiper-wrapper">
                     <div class="swiper-slide w-full h-full bg-black relative">
                         <iframe class="w-full h-full object-cover opacity-70" 
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ&controls=0" 
+                            src="https://www.youtube.com/embed/UhD8uukQgAM?autoplay=1&mute=1&loop=1&playlistUhD8uukQgAM&controls=0" 
                             title="Video Profil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                         </iframe>
                         <div class="absolute bottom-8 left-8 z-10 pointer-events-none">
-                            <h2 class="text-2xl md:text-4xl font-bold text-white text-shadow-lg">Profil Kampus</h2>
+                            <h2 class="text-2xl md:text-4xl font-bold text-white text-shadow-lg">SIEGA Podcast</h2>
                             <p class="text-gray-200 text-sm md:text-base">Kenali lingkungan belajar kami yang modern.</p>
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
@@ -119,9 +102,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
             </div>
         </div>
         
-        <a href="#about" class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/50 text-[10px] animate-bounce z-30 cursor-pointer hover:text-white transition">
-            Scroll ke bawah &darr;
-        </a>
     </section>
 
     <section id="about" class="py-16 md:py-24 bg-dark-bg border-t border-white/5">
@@ -133,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         <div class="h-1 w-20 bg-accent-primary rounded-full"></div>
                     </div>
                     <p class="text-text-muted leading-relaxed text-justify">
-                        Program Studi Sistem Informasi Unika Soegijapranata berdiri sejak 2013 untuk menjawab tantangan revolusi industri. Kami menggabungkan <strong>ilmu komputer</strong> dengan <strong>manajemen bisnis</strong>.
+                        Unika Soegijapranata mendapatkan ijin operasional program studi Sistem Informasi pada tahun 2013 dengan program konsentrasi Sistem Informasi dan Game Technology. Selanjutnya di tahun 2017, dibuka program kuliah ganda Akuntansi+Sistem Informasi (AKSI) dan konsentrasi E-Commerce di tahun 2018.
                     </p>
                     <p class="text-text-muted leading-relaxed text-justify">
                         Lulusan kami tidak hanya pandai coding, tapi juga mengerti strategi bisnis digital, menjadikan mereka aset berharga bagi perusahaan multinasional maupun startup.
@@ -152,19 +132,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
                 <div class="md:w-1/2 w-full" data-aos="fade-left">
                     <div class="bg-glass-bg p-8 rounded-2xl border border-white/10 relative shadow-2xl">
-                        <h3 class="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">Visi & Misi Ringkas</h3>
+                        <h3 class="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">Visi</h3>
+                        <ul class="space-y-4">
+                            <li class="flex gap-4">
+                                <p class="text-sm text-text-muted">Menjadi komunitas akademik yang unggul dalam pendidikan, penelitian dan pengabdian dengan dilandasi nilai-nilai Kristiani: cinta kasih, keadilan dan kejujuran</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center text-accent-primary flex-shrink-0"></div>
+                            </li>
+                        </ul>
+                        <h3 class="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">Misi</h3>
                         <ul class="space-y-4">
                             <li class="flex gap-4">
                                 <div class="w-8 h-8 rounded-full bg-accent-primary/20 flex items-center justify-center text-accent-primary flex-shrink-0">1</div>
-                                <p class="text-sm text-text-muted">Menjadi komunitas akademik unggul yang dilandasi nilai Kristiani.</p>
+                                <p class="text-sm text-text-muted">Menyelenggarakan pendidikan yang berkualitas secara akademik dengan didukung pengembangan kepribadian yang utuh dan potensi kepemimpinan.</p>
                             </li>
                             <li class="flex gap-4">
                                 <div class="w-8 h-8 rounded-full bg-accent-secondary/20 flex items-center justify-center text-accent-secondary flex-shrink-0">2</div>
-                                <p class="text-sm text-text-muted">Menyelenggarakan pendidikan berkualitas didukung pengembangan karakter.</p>
+                                <p class="text-sm text-text-muted">Melakukan penelitian untuk pengembangan ilmu dan teknologi demi meningkatkan kesejahteraan manusia.</p>
                             </li>
                             <li class="flex gap-4">
                                 <div class="w-8 h-8 rounded-full bg-pink-500/20 flex items-center justify-center text-pink-400 flex-shrink-0">3</div>
-                                <p class="text-sm text-text-muted">Melakukan penelitian & pengabdian untuk kesejahteraan masyarakat.</p>
+                                <p class="text-sm text-text-muted">Melakukan pengabdian kepada masyarakat sebagai penerapan ilmu dan teknologi yang telah dikembangkan dalam penelitian dan kesejahteraan manusia.</p>
+                            </li>
+                            <li class="flex gap-4">
+                                <div class="w-8 h-8 rounded-full bg-pink-500/20 flex items-center justify-center text-pink-400 flex-shrink-0">4</div>
+                                <p class="text-sm text-text-muted">Memberikan perhatian dan mencari pemecahan terhadap berbagai masalah sosial budaya masyarakat melalui komunitas akademik.</p>
+                            </li>
+                            <li class="flex gap-4">
+                                <div class="w-8 h-8 rounded-full bg-pink-500/20 flex items-center justify-center text-pink-400 flex-shrink-0">5</div>
+                                <p class="text-sm text-text-muted">Mengembangkan jaringan Kerjasama dengan berbagai institusi pendidikan, penelitian dan pengabdian lokal, nasional dan internasional untuk meningkatkan kualitas pendidikan dan penelitian.</p>
+                            </li>
+                            <li class="flex gap-4">
+                                <div class="w-8 h-8 rounded-full bg-pink-500/20 flex items-center justify-center text-pink-400 flex-shrink-0">6</div>
+                                <p class="text-sm text-text-muted">Memperbaiki dan mengembangkan universitas secara terus menerus, sehingga dapat mendukung segala upaya untuk mencapai keunggulan.</p>
+                            </li>
+                            <li class="flex gap-4">
+                                <p class="text-sm text-text-muted">Sistem Informasi adalah jembatan antara teknologi dan kebutuhan bisnis modern.</p>
                             </li>
                         </ul>
                     </div>
@@ -176,7 +182,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
     <section id="curriculum" class="py-16 md:py-24 bg-black/20">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-extrabold accent-gradient-text mb-4">Konsentrasi Studi</h2>
-            <p class="text-text-muted mb-12 max-w-2xl mx-auto">Pilih jalur spesialisasi yang sesuai dengan passion Anda.</p>
+            <p class="text-text-muted mb-12 max-w-2xl mx-auto">Program Studi Sistem Informasi di Unika Soegijapranata menawarkan beberapa konsentrasi yang dapat dipilih sesuai minat dan jalur karier. Berikut bidang-bidang yang akan Anda pelajari.</p>
             
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-accent-primary/50 transition duration-300 hover:-translate-y-2">
@@ -186,16 +192,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
                         <li>Business Intelligence</li>
                         <li>Audit Sistem Informasi</li>
+                        <li>Sistem Informasi Perusahaan</li>
+                        <li>Manajemen Hubungan Pelanggan</li>
+                        <li>Analisa dan Perancangan SI</li>
                     </ul>
                 </div>
                 <div class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-accent-secondary/50 transition duration-300 hover:-translate-y-2 relative overflow-hidden">
-                    <div class="absolute top-3 right-3 px-2 py-0.5 bg-accent-secondary text-[10px] font-bold text-black rounded">FAVORIT</div>
                     <div class="text-4xl mb-4 group-hover:scale-110 transition">🛒</div>
                     <h3 class="text-xl font-bold text-white mb-2">E-Commerce</h3>
                     <p class="text-sm text-text-muted mb-4">Bisnis digital, startup teknologi, dan pemasaran online.</p>
                     <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
                         <li>Digital Marketing</li>
-                        <li>Financial Technology (FinTech)</li>
+                        <li>Hukum Cyber</li>
+                        <li>Perilaku Konsumen</li>
+                        <li>Teknologi Keuangan</li>
+                        <li>Metaverse & E-Marketplace</li>
                     </ul>
                 </div>
                 <div class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-pink-500/50 transition duration-300 hover:-translate-y-2">
@@ -205,9 +216,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
                         <li>Game Design & Development</li>
                         <li>AR / VR Implementation</li>
+                        <li>Kecerdasan Buatan</li>
+                        <li>Animasi 2D & 3D</li>
+                        <li>Deteksi Gerak</li>
+                    </ul>
+                </div>
+                <div class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-pink-500/50 transition duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition">🎮</div>
+                    <h3 class="text-xl font-bold text-white mb-2">AKSI (Akuntansi + Sistem Informasi)</h3>
+                    <p class="text-sm text-text-muted mb-4">Akuntansi, ...</p>
+                    <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>
+
+            <p class="text-text-muted mb-12 max-w-2xl mx-auto">Mahasiswa dapat memilih konsentrasi sesuai minat baik Sistem Informasi , E-Commerce, Game Technology maupun AKSI sehingga lulusan siap menghadapi berbagai bidang industri TI, bisnis, dan kreatif.</p>
         </div>
     </section>
 

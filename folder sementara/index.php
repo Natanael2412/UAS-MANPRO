@@ -1,6 +1,5 @@
 <?php
 $title = "Jurusan Sistem Informasi";
-require __DIR__ . '/partials/header.php';
 
 
 $contact_result = '';
