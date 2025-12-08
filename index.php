@@ -251,19 +251,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         </div>
                     </div>
 
-                    <div
-                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
-                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
-                            class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/40"></div>
-                        <div class="absolute bottom-8 left-8 z-10 pointer-events-none">
-                            <h2 class="text-2xl md:text-4xl font-bold text-white text-shadow-lg">Laboratorium Canggih
-                            </h2>
-                            <p class="text-gray-200 text-sm md:text-base">Spesifikasi tinggi untuk AI & Game
-                                Development.</p>
-                        </div>
-                    </div>
-
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
