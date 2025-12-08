@@ -93,17 +93,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
             </div>
         </div>
 
-        <div class="w-full relative z-10 mt-8 mb-20">
+        <div class="w-full relative z-10 mt-6 mb-16">
 
             <button
-                class="swiper-button-prev-custom absolute top-1/2 left-4 z-20 w-10 h-10 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md">
-                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                class="swiper-button-prev-custom absolute top-1/2 left-4 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
             <button
-                class="swiper-button-next-custom absolute top-1/2 right-4 z-20 w-10 h-10 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md">
-                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                class="swiper-button-next-custom absolute top-1/2 right-4 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M9 5l7 7-7 7" />
                 </svg>
             </button>
@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
             <div class="swiper mySwiper w-full h-full border-t border-white/10">
                 <div class="swiper-wrapper">
                     <div
-                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
+                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <iframe class="w-full h-full object-cover opacity-70"
                             src="https://www.youtube.com/embed/UhD8uukQgAM?autoplay=1&mute=1&loop=1&playlistUhD8uukQgAM&controls=0"
                             title="Video Profil" frameborder="0"
@@ -129,15 +129,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
+                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <iframe class="w-full h-full object-cover opacity-70"
                             src="https://www.youtube.com/embed/i6XhsvWYHws?si=tpMaJ-XNj5WDj3Bw" title="Video Profil"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
-                        <div class="absolute bottom-8 left-8 z-10 pointer-events-none">
-                            <h2 class="text-2xl md:text-4xl font-bold text-white text-shadow-lg">SIEGA Metaverse Podcast
+                        <div class="absolute bottom-5 left-5 z-20 pointer-events-none">
+                            <h2 class="text-xl md:text-3xl font-bold text-white text-shadow-lg">SIEGA Metaverse Podcast
                             </h2>
                             <p class="text-gray-200 text-sm md:text-base">Kenali lingkungan belajar kami yang modern.
                             </p>
@@ -148,7 +148,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
+                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full flex items-center justify-center bg-black overflow-y-auto no-scrollbar">
 
@@ -166,14 +166,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none">
                         </div>
-                        <div class="absolute bottom-6 left-6 z-20 pointer-events-none">
+                        <div class="absolute bottom-5 left-5 z-20 pointer-events-none">
                             <p class="text-xl md:text-3xl font-bold text-white leading-tight">Brian - Google Student
                                 Ambassador</p>
                         </div>
                     </div>
 
                     <div
-                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
+                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full flex items-center justify-center bg-black overflow-y-auto no-scrollbar">
 
@@ -191,15 +191,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none">
                         </div>
-                        <div class="absolute bottom-6 left-6 z-20 pointer-events-none">
+                        <div class="absolute bottom-5 left-5 z-20 pointer-events-none">
                             <p class="text-xl md:text-3xl font-bold text-white leading-tight">HMPSSI - Yakin ga join
                                 SIEGA?</p>
                         </div>
                     </div>
 
                     <div
-                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
-
+                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full overflow-y-auto no-scrollbar flex justify-center items-start pt-0 md:pt-2">
 
@@ -232,8 +231,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
-
+                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full overflow-y-auto no-scrollbar flex justify-center items-start pt-0 md:pt-2">
 
