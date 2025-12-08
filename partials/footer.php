@@ -22,7 +22,7 @@
       <div class="space-y-4">
         <h4 class="text-white font-bold text-lg">Akademik</h4>
         <div class="flex flex-col space-y-2 text-text-muted text-sm">
-          <a href="#" class="hover:text-accent-secondary transition">Info PMB</a>
+          <a href="infopmb.php" class="hover:text-accent-secondary transition">Info Penerimaan Siswa Baru</a>
           <a href="#" class="hover:text-accent-secondary transition">Kurikulum</a>
           <a href="#" class="hover:text-accent-secondary transition">Akreditasi</a>
         </div>
@@ -40,10 +40,8 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-  // 1. Inisialisasi AOS
   AOS.init({ duration: 800, once: true, offset: 100 });
 
-  // 2. Inisialisasi Lenis
   const lenis = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -53,39 +51,33 @@
   function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
   requestAnimationFrame(raf);
 
-  // 3. Konfigurasi SWIPER (ETALASE) - BARU DITAMBAHKAN
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1, // Default HP: 1 kartu
-    spaceBetween: 20, // Jarak antar kartu
-    loop: true,       // Bisa diputar terus (infinite)
-    grabCursor: true, // Kursor berubah jadi tangan saat grab
-
-    // Setting Responsive (Breakpoint)
+    slidesPerView: 1, 
+    spaceBetween: 20, 
+    loop: true,       
+    grabCursor: true, 
     breakpoints: {
       640: {
-        slidesPerView: 2, // Tablet: 2 kartu
+        slidesPerView: 2, 
         spaceBetween: 20,
       },
       1024: {
-        slidesPerView: 3, // Desktop: 3 kartu
+        slidesPerView: 3, 
         spaceBetween: 30,
       },
     },
 
-    // Navigasi Tombol
     navigation: {
       nextEl: ".swiper-button-next-custom",
       prevEl: ".swiper-button-prev-custom",
     },
 
-    // Pagination (Titik bawah)
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-      dynamicBullets: true, // Titik mengecil jika banyak slide
+      dynamicBullets: true, 
     },
 
-    // Autoplay (Opsional: Geser otomatis tiap 3 detik)
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -93,9 +85,7 @@
     },
   });
 
-  // 4. Integrasi Lenis dengan Anchor Links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    // ... (kode lama tetap sama) ...
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
       const targetId = this.getAttribute('href');
@@ -110,7 +100,6 @@
     });
   });
 
-  // ... (kode toggle menu mobile tetap sama) ...
   const btn = document.getElementById('nav-toggle');
   const menu = document.getElementById('mobile-menu');
   if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
