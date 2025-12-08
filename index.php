@@ -42,11 +42,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
         scrollbar-width: none;
         /* Firefox */
     }
+
+    /* Tambahkan ini di bagian <style> index.php Anda */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
 </style>
 
 <main class="w-full overflow-x-hidden bg-dark-bg text-text-light">
 
-    <section id="hero-compact" class="h-screen w-full flex flex-col pt-20 pb-0 relative overflow-hidden">
+    <section id="hero-compact" class="min-h-screen w-full flex flex-col pt-16 pb-20 relative overflow-hidden">
 
         <div class="flex-none text-center px-4 z-10 animate-fade-down">
             <span
@@ -62,7 +74,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
             </p>
         </div>
 
-        <div class="flex-1 w-full relative min-h-0">
+        <div class="w-full max-w-4xl mx-auto mt-6 mb-8 px-4 relative z-20" data-aos="zoom-in">
+            <div
+                class="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-white/10 shadow-neon group">
+                <video
+                    class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-700 ease-in-out"
+                    autoplay loop muted playsinline>
+                    <source src="assets/video/Banner-siega.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+
+                <div
+                    class="absolute inset-0 bg-[url('https://media.giphy.com/media/media/LdLqD6I3rJ6jm/giphy.gif')] opacity-5 pointer-events-none mix-blend-overlay">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent pointer-events-none">
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full relative z-10 mt-8 mb-20">
 
             <button
                 class="swiper-button-prev-custom absolute top-1/2 left-4 z-20 w-10 h-10 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md">
@@ -79,7 +110,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
             <div class="swiper mySwiper w-full h-full border-t border-white/10">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide w-full h-full bg-black relative">
+                    <div
+                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
                         <iframe class="w-full h-full object-cover opacity-70"
                             src="https://www.youtube.com/embed/UhD8uukQgAM?autoplay=1&mute=1&loop=1&playlistUhD8uukQgAM&controls=0"
                             title="Video Profil" frameborder="0"
@@ -96,68 +128,129 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         </div>
                     </div>
 
-                    <div class="swiper-slide w-full h-full relative bg-black">
-                        <video class="w-full h-full object-cover" autoplay loop muted playsinline>
-                            <source src="assets/video/konten-tiktok.mp4" type="video/mp4">
-                        </video>
-
-                        <div
-                            class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60 pointer-events-none">
-                        </div>
-                        <div class="absolute bottom-6 left-4 right-4 z-10 text-white">
-                            <div class="flex items-center gap-2 mb-2">
-                                <span class="bg-black/50 p-1 rounded-full text-xs">🎵 TikTok</span>
-                            </div>
-                            <p class="font-bold text-lg leading-tight">Serunya kuliah di SIEGA! 🎓</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide w-full h-full relative bg-dark-bg">
-                        <div class="absolute inset-0 bg-cover bg-center blur-sm opacity-50"
-                            style="background-image: url('assets/img/foto-ig.jpg');"></div>
-
-                        <div class="relative z-10 w-full h-full flex items-center justify-center p-4">
-                            <img src="assets/img/foto-ig.jpg"
-                                class="max-h-full max-w-full rounded-lg shadow-2xl border border-white/10"
-                                alt="Instagram Post">
-                        </div>
-
-                        <div
-                            class="absolute top-4 right-4 z-20 text-white bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-500 p-2 rounded-lg shadow-lg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                            </svg>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide w-full h-full relative">
-                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
-                            class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/40"></div>
+                    <div
+                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
+                        <iframe class="w-full h-full object-cover opacity-70"
+                            src="https://www.youtube.com/embed/i6XhsvWYHws?si=tpMaJ-XNj5WDj3Bw" title="Video Profil"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
                         <div class="absolute bottom-8 left-8 z-10 pointer-events-none">
-                            <h2 class="text-2xl md:text-4xl font-bold text-white text-shadow-lg">Laboratorium Canggih
+                            <h2 class="text-2xl md:text-4xl font-bold text-white text-shadow-lg">SIEGA Metaverse Podcast
                             </h2>
-                            <p class="text-gray-200 text-sm md:text-base">Spesifikasi tinggi untuk AI & Game
-                                Development.</p>
+                            <p class="text-gray-200 text-sm md:text-base">Kenali lingkungan belajar kami yang modern.
+                            </p>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none">
                         </div>
                     </div>
 
-                    <div class="swiper-slide w-full h-full relative bg-dark-bg flex items-center justify-center">
+                    <div
+                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
                         <div
-                            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-40">
+                            class="w-full h-full flex items-center justify-center bg-black overflow-y-auto no-scrollbar">
+
+                            <blockquote class="tiktok-embed"
+                                cite="https://www.tiktok.com/@siega_unika/video/7570711511581199634"
+                                data-video-id="7570711511581199634" style="max-width: 605px; min-width: 325px;">
+                                <section>
+                                    <a target="_blank" title="@siega_unika"
+                                        href="https://www.tiktok.com/@siega_unika?refer=embed"></a>
+                                </section>
+                            </blockquote>
+                            <script async src="https://www.tiktok.com/embed.js"></script>
                         </div>
+
                         <div
-                            class="text-center p-6 relative z-10 bg-black/30 backdrop-blur-md rounded-2xl border border-white/10 max-w-md mx-4">
-                            <span class="text-4xl md:text-5xl mb-4 block">🏆</span>
-                            <h4 class="text-2xl md:text-3xl font-bold text-white">Juara Nasional</h4>
-                            <p class="text-gray-200 mt-2 text-sm">Mahasiswa kami rutin menjuarai kompetisi Gemastik &
-                                Hackathon.</p>
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none">
+                        </div>
+                        <div class="absolute bottom-6 left-6 z-20 pointer-events-none">
+                            <p class="text-xl md:text-3xl font-bold text-white leading-tight">Brian - Google Student
+                                Ambassador</p>
                         </div>
                     </div>
+
+                    <div
+                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
+                        <div
+                            class="w-full h-full flex items-center justify-center bg-black overflow-y-auto no-scrollbar">
+
+                            <blockquote class="tiktok-embed"
+                                cite="https://www.tiktok.com/@hmpssi_unika/video/7331587570457005318"
+                                data-video-id="7331587570457005318" style="max-width: 605px;min-width: 325px;">
+                                <section> <a target="_blank" title="@hmpssi_unika"
+                                        href="https://www.tiktok.com/@hmpssi_unika?refer=embed"></a> <a title="fyp"
+                                        target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a>
+                                </section>
+                            </blockquote>
+                            <script async src="https://www.tiktok.com/embed.js"></script>
+                        </div>
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none">
+                        </div>
+                        <div class="absolute bottom-6 left-6 z-20 pointer-events-none">
+                            <p class="text-xl md:text-3xl font-bold text-white leading-tight">HMPSSI - Yakin ga join
+                                SIEGA?</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
+
+                        <div
+                            class="w-full h-full overflow-y-auto no-scrollbar flex justify-center items-start pt-0 md:pt-2">
+
+                            <blockquote class="instagram-media"
+                                data-instgrm-permalink="https://www.instagram.com/reel/DCjuGBPytNv/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                data-instgrm-version="14">
+                                <div>
+                                    <a href="https://www.instagram.com/reel/DCjuGBPytNv/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                        target="_blank">
+                                    </a>
+                                    <p
+                                        style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                        <a href="https://www.instagram.com/reel/DCjuGBPytNv/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                            target="_blank">Sebuah kiriman dibagikan oleh Himpunan Mahasiswa Program
+                                            Studi Sistem Informasi SCU (@hmpssi.scu)</a>
+                                    </p>
+                                </div>
+                            </blockquote>
+                            <script async src="//www.instagram.com/embed.js"></script>
+
+                        </div>
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none">
+                        </div>
+                        <div class="absolute bottom-6 left-6 z-20 pointer-events-none">
+                            <p class="text-xl md:text-3xl font-bold text-white leading-tight">HMPSSI - Kegiatan DIES
+                                Natalis</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
+
+                        <div
+                            class="w-full h-full overflow-y-auto no-scrollbar flex justify-center items-start pt-0 md:pt-2">
+
+                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DRw1dWvDx09/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DRw1dWvDx09/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Lihat postingan ini di Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DRw1dWvDx09/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Sebuah kiriman dibagikan oleh Soegijapranata Catholic University (SCU) (@unika.soegijapranata)</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+                            <script async src="//www.instagram.com/embed.js"></script>
+
+                        </div>
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none">
+                        </div>
+                        <div class="absolute bottom-6 left-6 z-20 pointer-events-none">
+                            <p class="text-xl md:text-3xl font-bold text-white leading-tight">SIEGA - Intelligent Accounting System</p>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -483,8 +576,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     <div class="p-8 md:p-10 space-y-8">
 
                         <div class="w-full h-64 rounded-xl overflow-hidden border border-white/10 shadow-lg">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.877664176531!2d110.40064657618629!3d-7.023663392978041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bab00d3e8e7%3A0xbcd9046f4a49cf15!2sSIEGA%20Unika%20Soegijapranata!5e0!3m2!1sen!2sid!4v1765123280822!5m2!1sen!2sid" width="100%" height="100%"
-                                style="border:0;" allowfullscreen="" loading="lazy"
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.877664176531!2d110.40064657618629!3d-7.023663392978041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bab00d3e8e7%3A0xbcd9046f4a49cf15!2sSIEGA%20Unika%20Soegijapranata!5e0!3m2!1sen!2sid!4v1765123280822!5m2!1sen!2sid"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                         </div>
@@ -622,17 +716,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
         });
     });
 
-    // C. Konfigurasi SWIPER (Hero Carousel)
+    // C. Konfigurasi SWIPER (Hero Carousel - 3D Coverflow)
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 0,
+        effect: "coverflow", // Mengaktifkan mode 3D
+        grabCursor: true,
+        centeredSlides: true, // Wajib true agar slide aktif ada di tengah
+        slidesPerView: "auto", // Wajib auto agar lebar slide mengikuti CSS (w-60% dll)
         loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
+        speed: 800, // Transisi lebih halus
+
+        // Pengaturan efek 3D
+        coverflowEffect: {
+            rotate: 0,      // Sudut putar (0 = datar, 50 = miring banget)
+            stretch: 0,     // Jarak tarik antar slide
+            depth: 150,     // Seberapa "dalam" efek 3D-nya (semakin besar semakin jauh slide samping)
+            modifier: 1.5,  // Pengali efek
+            slideShadows: true, // Bayangan gelap di slide samping agar fokus ke tengah
         },
-        effect: 'fade',
-        fadeEffect: { crossFade: true },
+
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
         navigation: {
             nextEl: ".swiper-button-next-custom",
             prevEl: ".swiper-button-prev-custom",
