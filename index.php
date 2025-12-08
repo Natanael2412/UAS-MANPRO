@@ -580,9 +580,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
         </div>
     </section>
 
-    <section id="contact" class="py-16 md:py-24 bg-dark-bg border-t border-white/5">
+    <section id="contact" class="py-16 md:py-24 bg-light-bg dark:bg-dark-bg border-t border-gray-300/30 dark:border-white/5 transition-colors">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-12">Hubungi Kami</h2>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12">Hubungi Kami</h2>
 
             <div class="bg-glass-bg rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
                 <div class="grid grid-cols-1 md:grid-cols-2">
@@ -600,7 +600,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         <div class="space-y-6 text-sm text-text-muted">
 
                             <div class="flex items-start gap-4">
-                                <div class="p-2 bg-white/5 rounded-lg text-accent-primary">
+                                <div class="p-2 rounded-lg bg-white/50 dark:bg-white/5 border border-gray-300/30 dark:border-white/10 text-accent-primary transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -609,13 +609,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                                     </svg>
                                 </div>
                                 <div>
-                                    <h4 class="text-white font-bold mb-1">Jam Kerja</h4>
+                                    <h4 class="font-bold mb-1">Jam Kerja</h4>
                                     <p>Senin – Jumat<br>08.00 – 15.00 WIB</p>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-4">
-                                <div class="p-2 bg-white/5 rounded-lg text-accent-secondary">
+                                <div class="p-2 rounded-lg bg-white/50 dark:bg-white/5 border border-gray-300/30 dark:border-white/10 text-accent-primary transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -624,14 +624,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                                     </svg>
                                 </div>
                                 <div>
-                                    <h4 class="text-white font-bold mb-1">Alamat</h4>
+                                    <h4 class="font-bold mb-1">Alamat</h4>
                                     <p>Gedung Henricus Constant Lt 8 Unika Soegijapranata<br>
                                         Jl. Pawiyatan Luhur IV/1, Bendan Duwur,<br>Semarang, Jawa Tengah 50234</p>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-4">
-                                <div class="p-2 bg-white/5 rounded-lg text-pink-400">
+                                <div class="p-2 rounded-lg bg-white/50 dark:bg-white/5 border border-gray-300/30 dark:border-white/10 text-accent-primary transition-colors">   
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -641,7 +641,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                                     </svg>
                                 </div>
                                 <div>
-                                    <h4 class="text-white font-bold mb-1">Kontak</h4>
+                                    <h4 class="font-bold mb-1">Kontak</h4>
                                     <p class="mb-1">Email: <a href="mailto:si@unika.ac.id"
                                             class="text-accent-primary hover:underline">si@unika.ac.id</a></p>
                                     <p>Hotline: <a href="https://wa.me/6281903385595"
@@ -653,9 +653,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="p-8 md:p-10 border-t md:border-t-0 md:border-l border-white/10 bg-black/20 flex flex-col justify-center">
-
-                        <h3 class="text-xl font-bold text-white mb-6">Kirim Pesan</h3>
+                        class="p-8 md:p-10 border-t md:border-t-0 md:border-l border-gray-300/40 dark:border-white/10 bg-white/60 dark:bg-black/20 flex flex-col justify-center transition-colors">
+                        <h3 class="text-xl font-bold mb-6">Kirim Pesan</h3>
 
                         <?php if ($contact_result): ?>
                             <div
@@ -668,18 +667,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                             <div>
                                 <label class="block text-sm font-medium text-text-muted mb-2">Nama Lengkap</label>
                                 <input type="text" id="cf-name" name="name" required placeholder="Masukkan nama Anda"
-                                    class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
+                                    class="w-full px-4 py-3 rounded-xl bg-white/70 dark:bg-white/5 border border-gray-300/40 dark:border-white/10 text-light-text dark:text-dark-text placeholder-gray-400 dark:placeholder-gray-500
+                                    focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-text-muted mb-2">Email</label>
                                 <input type="email" id="cf-email" name="email" required placeholder="email@contoh.com"
-                                    class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
+                                    class="w-full px-4 py-3 rounded-xl bg-white/70 dark:bg-white/5 border border-gray-300/40 dark:border-white/10 text-light-text dark:text-dark-text placeholder-gray-400 dark:placeholder-gray-500
+                                    focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-text-muted mb-2">Pesan</label>
                                 <textarea id="cf-message" name="message" rows="4" required
                                     placeholder="Tulis pesan Anda di sini..."
-                                    class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition resize-none"></textarea>
+                                    class="w-full px-4 py-3 rounded-xl bg-white/70 dark:bg-white/5 border border-gray-300/40 dark:border-white/10 text-light-text dark:text-dark-text placeholder-gray-400 dark:placeholder-gray-500
+                                    focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition resize-none"></textarea>
                             </div>
                             <button type="submit" name="contact_submit"
                                 class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-accent-primary to-accent-secondary hover:shadow-lg hover:shadow-accent-primary/25 transition transform hover:-translate-y-1">
@@ -687,7 +689,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                             </button>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
