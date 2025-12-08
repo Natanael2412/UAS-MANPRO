@@ -58,7 +58,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
 <main class="w-full overflow-x-hidden bg-dark-bg text-text-light">
 
-    <section id="hero-compact" class="min-h-screen w-full flex flex-col pt-16 pb-20 relative overflow-hidden">
+<section id="hero-compact" class="min-h-screen w-full flex flex-col pt-16 pb-20 relative overflow-hidden bg-light-bg text-light-text 
+    dark:bg-dark-bg dark:text-dark-text">
 
         <div class="flex-none text-center px-4 z-10 animate-fade-down">
             <span
