@@ -369,7 +369,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
         </div>
     </section>
 
-    <section id="curriculum" class="py-16 md:py-24 bg-black/20">
+    <section id="curriculum" class="py-16 md:py-24 bg-light-bg dark:bg-dark-bg-2 text-light-text dark:text-dark-text transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-extrabold accent-gradient-text mb-4">Konsentrasi Studi</h2>
             <p class="text-text-muted mb-12 max-w-2xl mx-auto">Program Studi Sistem Informasi di Unika Soegijapranata
@@ -378,9 +378,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                 <div
-                    class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-accent-primary/50 transition duration-300 hover:-translate-y-2">
+                    class="group p-6 bg-glass-bg rounded-2xl border border-gray-300/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-yellow-400/50 dark:hover:border-yellow-400/50 ">
                     <div class="text-4xl mb-4 group-hover:scale-110 transition">💻</div>
-                    <h3 class="text-xl font-bold text-white mb-2">Sistem Informasi</h3>
+                    <h3 class="text-xl font-bold mb-2">Sistem Informasi</h3>
                     <p class="text-sm text-text-muted mb-4">Analisis sistem, ERP, dan integrasi teknologi korporat.</p>
                     <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
                         <li>Business Intelligence</li>
@@ -391,9 +391,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </ul>
                 </div>
                 <div
-                    class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-accent-secondary/50 transition duration-300 hover:-translate-y-2 relative overflow-hidden">
+                    class="group p-6 bg-glass-bg rounded-2xl border border-gray-300/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-yellow-400/50 dark:hover:border-yellow-400/50 ">
                     <div class="text-4xl mb-4 group-hover:scale-110 transition">🛒</div>
-                    <h3 class="text-xl font-bold text-white mb-2">E-Commerce</h3>
+                    <h3 class="text-xl font-bold mb-2">E-Commerce</h3>
                     <p class="text-sm text-text-muted mb-4">Bisnis digital, startup teknologi, dan pemasaran online.</p>
                     <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
                         <li>Digital Marketing</li>
@@ -404,9 +404,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </ul>
                 </div>
                 <div
-                    class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-pink-500/50 transition duration-300 hover:-translate-y-2">
+                    class="group p-6 bg-glass-bg rounded-2xl border border-gray-300/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-yellow-400/50 dark:hover:border-yellow-400/50 ">
                     <div class="text-4xl mb-4 group-hover:scale-110 transition">🎮</div>
-                    <h3 class="text-xl font-bold text-white mb-2">Game Technology</h3>
+                    <h3 class="text-xl font-bold mb-2">Game Technology</h3>
                     <p class="text-sm text-text-muted mb-4">Pengembangan game, AI, dan teknologi interaktif.</p>
                     <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
                         <li>Game Design & Development</li>
@@ -417,9 +417,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </ul>
                 </div>
                 <div
-                    class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-yellow-400/50 transition duration-300 hover:-translate-y-2">
+                    class="group p-6 bg-glass-bg rounded-2xl border border-gray-300/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-yellow-400/50 dark:hover:border-yellow-400/50 ">
                     <div class="text-4xl mb-4 group-hover:scale-110 transition">📊</div>
-                    <h3 class="text-xl font-bold text-white mb-2">AKSI (Akuntansi + SI)</h3>
+                    <h3 class="text-xl font-bold mb-2">AKSI (Akuntansi + SI)</h3>
                     <p class="text-sm text-text-muted mb-4">Program ganda yang menggabungkan keahlian Akuntansi keuangan
                         dengan teknologi sistem informasi modern.</p>
                     <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
@@ -436,45 +436,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                 bidang industri TI, bisnis, dan kreatif.</p>
     </section>
 
-    <section id="faculty" class="py-16 md:py-24 bg-dark-bg">
+    <section id="faculty" class="py-16 md:py-24 bg-light-bg-2 dark:bg-dark-bg 
+           text-light-text dark:text-dark-text transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-10">Dosen & Staf Ahli</h2>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">Dosen & Staf Ahli</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                 <div
-                    class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-accent-primary/50 transition duration-300 hover:-translate-y-2">
+                    class="group bg-glass-bg rounded-xl p-6 text-center border border-gray-400/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-accent-secondary/50 dark:hover:border-accent-secondary/50">
                     <div
-                        class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-accent-primary/50 transition">
+                        class="w-48 h-48 mx-auto bg-white/50 dark:bg-white/5 p-2 rounded-lg border border-gray-400/40 dark:border-white/10 mb-6 transition group-hover:border-accent-secondary/50 dark:group-hover:border-accent-secondary/50">
                         <img src="assets/img/dosen-ridwan.jpg" alt="Prof. Ridwan"
                             class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-1 leading-tight">Prof. Dr. Ridwan Sanjaya, S.E., S.Kom.,
+                    <h3 class="text-lg font-bold mb-1 leading-tight">Prof. Dr. Ridwan Sanjaya, S.E., S.Kom.,
                         MS.IEC</h3>
                     <div class="h-0.5 w-12 bg-accent-primary mx-auto my-3"></div>
                     <p class="text-text-muted text-sm">Dekan Fakultas Ilmu Komputer / Guru Besar Sistem Informasi</p>
                 </div>
 
                 <div
-                    class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-accent-secondary/50 transition duration-300 hover:-translate-y-2">
+                    class="group bg-glass-bg rounded-xl p-6 text-center border border-gray-400/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-accent-secondary/50 dark:hover:border-accent-secondary/50">
                     <div
-                        class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-accent-secondary/50 transition">
+                        class="w-48 h-48 mx-auto bg-white/50 dark:bg-white/5 p-2 rounded-lg border border-gray-400/40 dark:border-white/10 mb-6 transition group-hover:border-accent-secondary/50 dark:group-hover:border-accent-secondary/50">
                         <img src="assets/img/dosen-bernadinus.jpg" alt="Dr. Bernadinus"
                             class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-1 leading-tight">Dr. Bernadinus Harnadi, S.T., M.T.</h3>
+                    <h3 class="text-lg font-bold mb-1 leading-tight">Dr. Bernadinus Harnadi, S.T., M.T.</h3>
                     <div class="h-0.5 w-12 bg-accent-secondary mx-auto my-3"></div>
                     <p class="text-text-muted text-sm">Wakil Dekan Fakultas Ilmu Komputer</p>
                 </div>
 
                 <div
-                    class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-pink-500/50 transition duration-300 hover:-translate-y-2">
+                    class="group bg-glass-bg rounded-xl p-6 text-center border border-gray-400/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-accent-secondary/50 dark:hover:border-accent-secondary/50">
                     <div
-                        class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-pink-500/50 transition">
+                        class="w-48 h-48 mx-auto bg-white/50 dark:bg-white/5 p-2 rounded-lg border border-gray-400/40 dark:border-white/10 mb-6 transition group-hover:border-accent-secondary/50 dark:group-hover:border-accent-secondary/50">
                         <img src="assets/img/dosen-albertus.jpg" alt="Dr. Albertus"
                             class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-1 leading-tight">Dr. Albertus Dwiyoga Widiantoro, S.Kom.,
+                    <h3 class="text-lg font-bold mb-1 leading-tight">Dr. Albertus Dwiyoga Widiantoro, S.Kom.,
                         M.Kom.</h3>
                     <div class="h-0.5 w-12 bg-pink-500 mx-auto my-3"></div>
                     <p class="text-text-muted text-sm">Ketua Program Studi Sistem Informasi</p>
@@ -484,7 +485,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
             <div class="text-center mt-12">
                 <a href="dosen.php"
-                    class="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-white/20 bg-white/5 text-white hover:bg-white/10 hover:border-accent-primary hover:scale-105 transition-all duration-300 group">
+                    class="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-gray-400/50 dark:border-white/20 bg-white/40 dark:bg-white/5 hover:bg-white/60 
+                    dark:hover:bg-white/10 hover:border-accent-primary dark:hover:border-accent-primary hover:scale-105 transition-all duration-300 group">
                     Lihat Seluruh Dosen & Staf
                     <span class="group-hover:translate-x-1 transition">&rarr;</span>
                 </a>
@@ -492,79 +494,85 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
         </div>
     </section>
 
-    <section id="projects" class="py-16 md:py-24 bg-black/30 relative overflow-hidden">
+    <section id="projects" class="py-16 md:py-24 bg-light-bg-2 dark:bg-black/30 text-light-text dark:text-dark-text relative overflow-hidden transition-colors duration-300">
         <div class="absolute top-0 right-0 w-64 h-64 bg-accent-primary/10 rounded-full blur-3xl pointer-events-none">
         </div>
         <div class="max-w-6xl mx-auto px-4 relative z-10">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-2">Proyek Unggulan</h2>
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-2">Proyek Unggulan</h2>
                 <p class="text-text-muted">Karya inovatif mahasiswa yang siap diterapkan di industri.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <div
-                    class="group bg-glass-bg border border-white/10 rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-accent-primary/20 transition duration-300">
+                    class="group bg-glass-bg rounded-xl overflow-hidden border border-gray-400/50 dark:border-white/10 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/30">
                     <div class="h-48 bg-gray-800 relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1000&auto=format&fit=crop"
                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100">
                         <div
-                            class="absolute top-3 right-3 px-2 py-1 bg-blue-600/90 backdrop-blur text-[10px] font-bold rounded text-white">
+                            class="absolute top-3 right-3 px-2 py-1 bg-blue-600/90 backdrop-blur text-[10px] font-bold rounded">
                             WEB APP</div>
                     </div>
                     <div class="p-6">
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-accent-primary transition">
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-accent-primary transition">
                             E-Invitation Platform</h4>
                         <p class="text-sm text-text-muted mb-4 line-clamp-3">Platform undangan pernikahan digital
                             berbasis SAAS dengan fitur pembayaran gateway, manajemen tamu, dan QR Check-in.</p>
                         <div class="flex gap-2">
                             <span
-                                class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-gray-300">Laravel</span>
+                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Laravel</span>
                             <span
-                                class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-gray-300">ReactJS</span>
+                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">ReactJS</span>
                         </div>
                     </div>
                 </div>
                 <div
-                    class="group bg-glass-bg border border-white/10 rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-accent-secondary/20 transition duration-300">
+                    class="group bg-glass-bg rounded-xl overflow-hidden border border-gray-400/50 dark:border-white/10 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/30">
                     <div class="h-48 bg-gray-800 relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1000&auto=format&fit=crop"
                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100">
                         <div
-                            class="absolute top-3 right-3 px-2 py-1 bg-green-600/90 backdrop-blur text-[10px] font-bold rounded text-white">
+                            class="absolute top-3 right-3 px-2 py-1 bg-green-600/90 backdrop-blur text-[10px] font-bold rounded">
                             IOT & AI</div>
                     </div>
                     <div class="p-6">
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-accent-secondary transition">Smart
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-accent-secondary transition">Smart
                             Farming AI</h4>
                         <p class="text-sm text-text-muted mb-4 line-clamp-3">Sistem monitoring tanaman hidroponik
                             menggunakan IoT dan Computer Vision untuk mendeteksi penyakit daun secara otomatis.</p>
                         <div class="flex gap-2">
                             <span
-                                class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-gray-300">Python</span>
+                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Python</span>
                             <span
-                                class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-gray-300">TensorFlow</span>
+                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">TensorFlow</span>
                         </div>
                     </div>
                 </div>
                 <div
-                    class="group bg-glass-bg border border-white/10 rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-pink-500/20 transition duration-300">
+                    class="group bg-glass-bg rounded-xl overflow-hidden border border-gray-400/50 dark:border-white/10 transition duration-300 hover:shadow-2xl hover:shadow-pink-500/20 dark:hover:shadow-pink-500/30">
                     <div class="h-48 bg-gray-800 relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1592478411213-61535fdd861d?q=80&w=1000&auto=format&fit=crop"
                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100">
                         <div
-                            class="absolute top-3 right-3 px-2 py-1 bg-purple-600/90 backdrop-blur text-[10px] font-bold rounded text-white">
+                            class="absolute top-3 right-3 px-2 py-1 bg-purple-600/90 backdrop-blur text-[10px] font-bold rounded">
                             GAME DEV</div>
                     </div>
                     <div class="p-6">
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-pink-400 transition">Nusantara VR
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-pink-400 transition">Nusantara VR
                         </h4>
                         <p class="text-sm text-text-muted mb-4 line-clamp-3">Game edukasi sejarah berbasis Virtual
                             Reality (VR) yang mengajak pemain menjelajahi candi-candi di Indonesia secara imersif.</p>
                         <div class="flex gap-2">
                             <span
-                                class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-gray-300">Unity
+                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Unity
                                 3D</span>
                             <span
-                                class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-gray-300">C#</span>
+                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">C#</span>
                         </div>
                     </div>
                 </div>
