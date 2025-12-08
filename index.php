@@ -46,23 +46,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
 <main class="w-full overflow-x-hidden bg-dark-bg text-text-light">
 
-    <section id="hero-compact" class="h-screen w-full flex flex-col pt-20 pb-0 relative overflow-hidden">
+    <section id="hero-compact" class="min-h-screen w-full flex flex-col pt-16 pb-20 relative overflow-hidden">
 
         <div class="flex-none text-center px-4 z-10 animate-fade-down">
-            <span
-                class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-accent-secondary text-[10px] md:text-xs font-semibold tracking-wide uppercase inline-block mb-2">
-                Fakultas Ilmu Komputer
-            </span>
-            <h1
-                class="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight bg-gradient-to-r from-blue-500 via-teal-500 to-accent-primary bg-clip-text text-transparent mb-1">
-                SIEGA
-            </h1>
-            <p class="text-xs md:text-sm text-text-muted max-w-lg mx-auto">
-                Menggabungkan teknologi, bisnis, dan analisis untuk membentuk pengubah digital masa depan.
-            </p>
+        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-accent-secondary text-[10px] md:text-xs font-semibold tracking-wide uppercase inline-block mb-2">
+            Fakultas Ilmu Komputer
+        </span>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight bg-gradient-to-r from-blue-500 via-teal-500 to-accent-primary bg-clip-text text-transparent mb-1">
+            SIEGA
+        </h1>
+        <p class="text-xs md:text-sm text-text-muted max-w-lg mx-auto">
+            Menggabungkan teknologi, bisnis, dan analisis untuk membentuk pengubah digital masa depan.
+        </p>
+    </div>
+
+        <div class="w-full max-w-4xl mx-auto mt-6 mb-8 px-4 relative z-20" data-aos="zoom-in">
+            <div
+                class="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-white/10 shadow-neon group">
+                <video
+                    class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-700 ease-in-out"
+                    autoplay loop muted playsinline>
+                    <source src="assets/video/Banner-siega.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+
+                <div
+                    class="absolute inset-0 bg-[url('https://media.giphy.com/media/media/LdLqD6I3rJ6jm/giphy.gif')] opacity-5 pointer-events-none mix-blend-overlay">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent pointer-events-none">
+                </div>
+            </div>
         </div>
 
-        <div class="flex-1 w-full relative min-h-0">
+       <div class="w-full relative z-10 mt-8 mb-20">
 
             <button
                 class="swiper-button-prev-custom absolute top-1/2 left-4 z-20 w-10 h-10 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md">
@@ -79,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
             <div class="swiper mySwiper w-full h-full border-t border-white/10">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide w-full h-full bg-black relative">
+                    <div class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
                         <iframe class="w-full h-full object-cover opacity-70"
                             src="https://www.youtube.com/embed/UhD8uukQgAM?autoplay=1&mute=1&loop=1&playlistUhD8uukQgAM&controls=0"
                             title="Video Profil" frameborder="0"
@@ -96,7 +113,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         </div>
                     </div>
 
-                    <div class="swiper-slide w-full h-full relative bg-black">
+                    <div class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
+                        <iframe class="w-full h-full object-cover opacity-70"
+                            src="https://youtu.be/i6XhsvWYHws?si=6U8Wxw5hIta0CsnG"
+                            title="Video Profil" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="absolute bottom-8 left-8 z-10 pointer-events-none">
+                            <h2 class="text-2xl md:text-4xl font-bold text-white text-shadow-lg">SIEGA Podcast</h2>
+                            <p class="text-gray-200 text-sm md:text-base">Kenali lingkungan belajar kami yang modern.
+                            </p>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
                         <video class="w-full h-full object-cover" autoplay loop muted playsinline>
                             <source src="assets/video/konten-tiktok.mp4" type="video/mp4">
                         </video>
@@ -112,7 +146,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         </div>
                     </div>
 
-                    <div class="swiper-slide w-full h-full relative bg-dark-bg">
+                    <div class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
                         <div class="absolute inset-0 bg-cover bg-center blur-sm opacity-50"
                             style="background-image: url('assets/img/foto-ig.jpg');"></div>
 
@@ -134,7 +168,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         </div>
                     </div>
 
-                    <div class="swiper-slide w-full h-full relative">
+                    <div class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
                         <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
                             class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/40"></div>
@@ -146,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         </div>
                     </div>
 
-                    <div class="swiper-slide w-full h-full relative bg-dark-bg flex items-center justify-center">
+                    <div class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
                         <div
                             class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-40">
                         </div>
@@ -483,8 +517,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     <div class="p-8 md:p-10 space-y-8">
 
                         <div class="w-full h-64 rounded-xl overflow-hidden border border-white/10 shadow-lg">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.877664176531!2d110.40064657618629!3d-7.023663392978041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bab00d3e8e7%3A0xbcd9046f4a49cf15!2sSIEGA%20Unika%20Soegijapranata!5e0!3m2!1sen!2sid!4v1765123280822!5m2!1sen!2sid" width="100%" height="100%"
-                                style="border:0;" allowfullscreen="" loading="lazy"
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.877664176531!2d110.40064657618629!3d-7.023663392978041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bab00d3e8e7%3A0xbcd9046f4a49cf15!2sSIEGA%20Unika%20Soegijapranata!5e0!3m2!1sen!2sid!4v1765123280822!5m2!1sen!2sid"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                         </div>
@@ -622,17 +657,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
         });
     });
 
-    // C. Konfigurasi SWIPER (Hero Carousel)
+   // C. Konfigurasi SWIPER (Hero Carousel - 3D Coverflow)
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 0,
+        effect: "coverflow", // Mengaktifkan mode 3D
+        grabCursor: true,
+        centeredSlides: true, // Wajib true agar slide aktif ada di tengah
+        slidesPerView: "auto", // Wajib auto agar lebar slide mengikuti CSS (w-60% dll)
         loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
+        speed: 800, // Transisi lebih halus
+        
+        // Pengaturan efek 3D
+        coverflowEffect: {
+            rotate: 0,      // Sudut putar (0 = datar, 50 = miring banget)
+            stretch: 0,     // Jarak tarik antar slide
+            depth: 150,     // Seberapa "dalam" efek 3D-nya (semakin besar semakin jauh slide samping)
+            modifier: 1.5,  // Pengali efek
+            slideShadows: true, // Bayangan gelap di slide samping agar fokus ke tengah
         },
-        effect: 'fade',
-        fadeEffect: { crossFade: true },
+        
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
         navigation: {
             nextEl: ".swiper-button-next-custom",
             prevEl: ".swiper-button-prev-custom",
