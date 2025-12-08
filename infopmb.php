@@ -89,8 +89,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
         background-repeat: no-repeat;
         background-position: right 15px center;
         background-size: 12px;
+        color: white !important;
+        background-color: #1e293b !important;
     }
-    
+
+    .select-input option {
+        background-color: #1e293b;
+        color: white;
+    }
+        
     .submit-btn {
         width: 100%;
         padding: 15px;
