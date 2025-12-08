@@ -8,17 +8,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
     $jurusan = trim($_POST['jurusan'] ?? '');
     $nama = trim($_POST['nama'] ?? '');
     $nik = trim($_POST['nik'] ?? '');
+    $hp = trim($_POST['hp'] ?? '');
+    $tempat_lahir = trim($_POST['tempat_lahir'] ?? '');
+    $tanggal_lahir = $_POST['tanggal_lahir'] ?? '';
+
 
     $errors = [];
     if (empty($jurusan)) $errors[] = "Jurusan harus dipilih";
     if (empty($nama)) $errors[] = "Nama lengkap harus diisi";
     if (empty($nik)) $errors[] = "NIK harus diisi";
+    if (empty($hp)) $errors[] = "No HP harus diisi";
+    if (empty($tempat_lahir)) $errors[] = "Tempat lahir harus diisi";
+    if (empty($tanggal_lahir)) $errors[] = "Tanggal lahir harus diisi";
+
     
     if (empty($errors)) {
         $data = [
             'waktu' => date('Y-m-d H:i:s'),
             'jurusan' => $jurusan,
             'nama' => $nama,
+            'nik' => $nik,
+            'hp' => $hp,
+            'tempat_lahir' => $tempat_lahir,
+            'tanggal_lahir' => $tanggal_lahir
+
         ];
         
         $saved_data = $data;
@@ -27,6 +40,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
                  $jurusan . " | " . 
                  $nama . " | " . 
                  $nik . " | " . 
+                 $hp . " | " . 
+                 $tempat_lahir . " | " . 
+                 $tanggal_lahir . PHP_EOL;
 
         $file = __DIR__ . '/storage/pendaftaran.txt';
         file_put_contents($file, $entry, FILE_APPEND);
@@ -186,6 +202,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
                         <div class="data-label">NIK</div>
                         <div class="data-value"><?= htmlspecialchars($saved_data['nik']) ?></div>
                     </div>
+                                        <div class="data-row">
+                        <div class="data-label">No HP</div>
+                        <div class="data-value"><?= htmlspecialchars($saved_data['hp']) ?></div>
+                    </div>
+                    <div class="data-row">
+                        <div class="data-label">Tempat, Tanggal Lahir</div>
+                        <div class="data-value"><?= htmlspecialchars($saved_data['tempat_lahir']) ?>, <?= htmlspecialchars($saved_data['tanggal_lahir']) ?></div>
+                    </div>
+                    <div class="data-row">
+                        <div class="data-label">Waktu Pendaftaran</div>
+                        <div class="data-value"><?= htmlspecialchars($saved_data['waktu']) ?></div>
+                    </div>
                 </div>
                 
                 <div class="mt-6 flex gap-3">
@@ -236,6 +264,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
                                class="form-input" 
                                placeholder="Masukkan NIK"
                                value="<?= isset($_POST['nik']) ? htmlspecialchars($_POST['nik']) : '' ?>">
+                    </div>
+                    
+                                        <div class="form-group">
+                        <label class="form-label">Tempat Lahir *</label>
+                        <input type="text" 
+                               name="tempat_lahir" 
+                               required 
+                               class="form-input" 
+                               placeholder="Kota tempat lahir"
+                               value="<?= isset($_POST['tempat_lahir']) ? htmlspecialchars($_POST['tempat_lahir']) : '' ?>">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Tanggal Lahir *</label>
+                        <input type="date" 
+                               name="tanggal_lahir" 
+                               required 
+                               class="form-input"
+                               value="<?= isset($_POST['tanggal_lahir']) ? htmlspecialchars($_POST['tanggal_lahir']) : '' ?>">
                     </div>
 
                     <div class="form-group">
