@@ -257,12 +257,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
     </section>
 
-    <section id="about" class="py-16 md:py-24 bg-dark-bg border-t border-white/5">
-        <div class="max-w-6xl mx-auto px-4">
+    <section id="about" class="py-16 md:py-24  bg-light-bg-2 text-light-text dark:bg-dark-bg-2 dark:text-dark-text">
+        <div class="absolute top-0 left-0 w-full h-8 bg-gradient-to-t from-[#0F172A] to-transparent pointer-events-none"></div>
+        <div class="max-w-5xl mx-auto px-6">
             <div class="flex flex-col md:flex-row gap-12 items-center">
                 <div class="md:w-1/2 space-y-6" data-aos="fade-right">
                     <div>
-                        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-2">Tentang Kami</h2>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mb-6">Tentang Kami</h2>
                         <div class="h-1 w-20 bg-accent-primary rounded-full"></div>
                     </div>
                     <p class="text-text-muted leading-relaxed text-justify">
@@ -275,13 +276,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         Lulusan kami tidak hanya pandai coding, tapi juga mengerti strategi bisnis digital, menjadikan
                         mereka aset berharga bagi perusahaan multinasional maupun startup.
                     </p>
-                    <div class="grid grid-cols-2 gap-4 mt-4">
-                        <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-center">
-                            <span class="block text-2xl font-bold text-accent-secondary">A</span>
+                   <div class="grid grid-cols-2 gap-4 mt-4">
+                        <div class="p-4 
+                            bg-blue-100/30 border border-blue-300/40
+                            dark:bg-blue-400/10 dark:border-blue-200/20
+                            rounded-xl text-center transition-colors duration-300 backdrop-blur-sm">
+                            <span class="block text-2xl font-bold text-accent-secondary dark:text-accent-primary">A</span>
                             <span class="text-xs text-text-muted">Akreditasi Unggul</span>
                         </div>
-                        <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-center">
-                            <span class="block text-2xl font-bold text-accent-secondary">95%</span>
+                        <div class="p-4 
+                            bg-blue-100/30 border border-blue-300/40
+                            dark:bg-blue-400/10 dark:border-blue-200/20
+                            rounded-xl text-center transition-colors duration-300 backdrop-blur-sm">
+                            <span class="block text-2xl font-bold text-accent-secondary dark:text-accent-primary">95%</span>
                             <span class="text-xs text-text-muted">Kerja < 3 Bulan</span>
                         </div>
                     </div>
@@ -289,7 +296,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
                 <div class="md:w-1/2 w-full" data-aos="fade-left">
                     <div class="bg-glass-bg p-8 rounded-2xl border border-white/10 relative shadow-2xl">
-                        <h3 class="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">Visi</h3>
+                        <h3 class="text-xl font-bold mb-6 border-b border-white/10 pb-4">Visi</h3>
                         <ul class="space-y-4">
                             <li class="flex gap-4">
                                 <p class="text-sm text-text-muted">Menjadi komunitas akademik yang unggul dalam
@@ -304,7 +311,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                                 </div>
                             </li>
                         </ul>
-                        <h3 class="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">Misi</h3>
+                        <h3 class="text-xl font-bold mb-6 border-b border-white/10 pb-4">Misi</h3>
                         <ul class="space-y-4">
                             <li class="flex gap-4">
                                 <div
