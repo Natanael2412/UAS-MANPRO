@@ -18,18 +18,18 @@
       <div class="space-y-4">
         <h4 class="text-gray-900 dark:text-white font-bold text-lg">Ikuti Kami</h4>
         <div class="flex flex-col space-y-2 text-gray-600 dark:text-gray-400 text-sm">
-          <a href="#" class="hover:text-accent-secondary transition">Instagram</a>
-          <a href="#" class="hover:text-accent-secondary transition">YouTube</a>
-          <a href="#" class="hover:text-accent-secondary transition">Tiktok</a>
+          <a href="https://www.instagram.com/siega_unika?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="hover:text-accent-secondary transition">Instagram</a>
+          <a href="https://youtube.com/@siegaunikasoegijapranata8217?si=GlrxAk30G3P1Go4L" class="hover:text-accent-secondary transition" class="hover:text-accent-secondary transition">YouTube</a>
+          <a href="https://www.tiktok.com/@siega_unika?is_from_webapp=1&sender_device=pc" class="hover:text-accent-secondary transition" class="hover:text-accent-secondary transition">Tiktok</a>
         </div>
       </div>
 
       <div class="space-y-4">
         <h4 class="text-gray-900 dark:text-white font-bold text-lg">Akademik</h4>
         <div class="flex flex-col space-y-2 text-gray-600 dark:text-gray-400 text-sm">
-          <a href="#" class="hover:text-accent-secondary transition">Info Penerimaan Siswa Baru</a>
-          <a href="#" class="hover:text-accent-secondary transition">Kurikulum</a>
-          <a href="#" class="hover:text-accent-secondary transition">Akreditasi</a>
+          <a href="infopmb.php" class="hover:text-accent-secondary transition">Info Penerimaan Siswa Baru</a>
+          <a href="kurikulum.php" class="hover:text-accent-secondary transition">Kurikulum</a>
+          <a href="akreditasi.php" class="hover:text-accent-secondary transition">Akreditasi</a>
         </div>
       </div>
 
