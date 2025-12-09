@@ -1,5 +1,6 @@
 <?php
 $title = "Info Pendaftaran Mahasiswa baru";
+$simple_mode = true; // Menyembunyikan menu navbar sesuai request
 require __DIR__ . '/partials/header.php';
 $result = '';
 $saved_data = [];

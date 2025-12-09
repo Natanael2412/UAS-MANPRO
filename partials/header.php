@@ -90,60 +90,77 @@ tailwind.config = {
     style="padding-top: 90px;">
 
 <header class="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-white/70 dark:bg-gray-900/80 backdrop-blur-lg transition-colors duration-300">
-
   <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
     <a class="text-2xl md:text-3xl font-extrabold leading-tight tracking-tight bg-gradient-to-r from-blue-300 via-teal-300 to-accent-primary bg-clip-text text-transparent mb-1" href="/">
         Sistem Informasi
-      </a>
+    </a>
     
-      <?php if (isset($hide_menu) && $hide_menu): ?>
+    <?php 
+    // KONDISI 1: Mode Simple (Hanya tombol "Kembali")
+    if (isset($simple_mode) && $simple_mode): 
+    ?>
+        <div class="flex items-center">
+             <a href="<?= $back_url ?? 'index.php' ?>" class="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 text-text-muted hover:bg-accent-primary hover:text-white hover:border-transparent transition-all">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                 Kembali
+             </a>
+        </div>
+
+    <?php 
+    // KONDISI 2: Mode Dosen (Tombol "Kembali ke Daftar Dosen")
+    elseif (isset($hide_menu) && $hide_menu): 
+    ?>
+        <div class="flex items-center">
+            <a href="index.php#faculty" class="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 text-text-muted hover:bg-accent-primary hover:text-white hover:border-transparent transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                Kembali ke Daftar Dosen
+            </a>
+        </div>
+
+    <?php 
+    // KONDISI 3: Menu Utama (Default)
+    else: 
+    ?>
+        <nav class="hidden md:flex space-x-1" id="main-nav">
+          <?php 
+          $navItems = [
+              '#about' => 'Tentang',
+              '#curriculum' => 'Kurikulum',
+              '#faculty' => 'Dosen',
+              '#projects' => 'Proyek',
+              '#contact' => 'Kontak',
+          ];
+          foreach ($navItems as $link => $label): ?>
+            <a href="<?= $link ?>" class="px-4 py-2 rounded-lg text-sm font-medium text-text-muted hover:bg-white/5 hover:text-white transition-all duration-200">
+              <?= $label ?>
+            </a>
+          <?php endforeach; ?>
           
-          <div class="flex items-center">
-              <a href="index.php#faculty" class="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 text-white text-sm hover:bg-accent-primary hover:border-transparent transition-all">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                  Kembali ke Daftar Dosen
-              </a>
-          </div>
+          <button id="themeToggle" class="p-2 rounded-xl border border-gray-300 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800 transition">
+             <span id="themeIcon">🌙</span>
+          </button>
+        </nav>
+    <?php endif; ?>
 
-      <?php else: ?>
-
-          <nav class="hidden md:flex space-x-1" id="main-nav">
-            <?php 
-            $navItems = [
-                '#about' => 'Tentang',
-                '#curriculum' => 'Kurikulum',
-                '#faculty' => 'Dosen',
-                '#projects' => 'Proyek',
-                '#contact' => 'Kontak',
-
-            ];
-            foreach ($navItems as $link => $label): ?>
-              <a href="<?= $link ?>" class="px-4 py-2 rounded-lg text-sm font-medium text-text-muted hover:bg-white/5 hover:text-white transition-all duration-200">
-                <?= $label ?>
-              </a>
-            <?php endforeach; ?>
-            <button id="themeToggle" class="p-2 rounded-xl border border-gray-300 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800 transition">
-      <span id="themeIcon">🌙</span>
-       </button>
-          </nav>
-
-      <?php endif; ?>
-
-      <button id="nav-toggle" aria-label="Toggle navigation" class="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-
+    <?php if (!isset($simple_mode) && !isset($hide_menu)): ?>
+    <button id="nav-toggle" aria-label="Toggle navigation" class="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    <?php endif; ?>
+  </div>
+  
+  <?php if (!isset($simple_mode) && !isset($hide_menu)): ?>
   <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-dark-bg border-b border-white/5 shadow-2xl p-4 flex flex-col space-y-2">
        <?php foreach ($navItems as $link => $label): ?>
           <a href="<?= $link ?>" class="block px-4 py-3 rounded-lg text-text-muted hover:bg-white/5 hover:text-white transition">
             <?= $label ?>
           </a>
         <?php endforeach; ?>
-    </div>
+  </div>
+  <?php endif; ?>
 </header>
 
 <script>
