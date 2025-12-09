@@ -1,7 +1,7 @@
 <?php
 $title = "Dosen & Staf - Sistem Informasi";
 $hide_menu = true; // Menyembunyikan menu navbar sesuai request
-require 'partials/header.php'; 
+require 'partials/header.php';
 ?>
 
 <main class="min-h-screen pt-24 pb-20 
@@ -9,7 +9,7 @@ require 'partials/header.php';
     dark:bg-dark-bg dark:text-dark-text">
 
     <div class="max-w-7xl mx-auto px-4">
-        
+
         <!-- TITLE -->
         <div class="text-center mb-16 space-y-4" data-aos="fade-up">
             <h1 class="text-4xl md:text-5xl font-extrabold 
@@ -41,41 +41,40 @@ require 'partials/header.php';
             ];
 
             foreach ($dosen as $d):
-            ?>
+                ?>
 
-            <!-- CARD DOSEN -->
-            <div class="group p-6 rounded-xl transition duration-300 hover:-translate-y-2
+                <!-- CARD DOSEN -->
+                <div class="group p-6 rounded-xl transition duration-300 hover:-translate-y-2
                 bg-white/70 border border-gray-300/60
                 dark:bg-dark-bg-2/40 dark:border-dark-muted/20
-                hover:border-accent-primary/60 dark:hover:border-accent-primary/70"
-                data-aos="fade-up">
+                hover:border-accent-primary/60 dark:hover:border-accent-primary/70" data-aos="fade-up">
 
-                <!-- FOTO -->
-                <div class="aspect-square w-full max-w-[200px] mx-auto 
+                    <!-- FOTO -->
+                    <div class="aspect-square w-full max-w-[200px] mx-auto 
                     bg-white/50 dark:bg-white/10 
                     p-2 rounded-lg border border-gray-200 dark:border-white/10
                     mb-5 group-hover:border-accent-primary/60 transition">
 
-                    <img src="<?= $d['foto'] ?>"
-                        onerror="this.src='https://ui-avatars.com/api/?name=<?= urlencode($d['nama']) ?>&background=random&size=256'"
-                        alt="<?= $d['nama'] ?>"
-                        class="w-full h-full object-cover rounded shadow-md grayscale group-hover:grayscale-0 transition">
-                </div>
+                        <img src="<?= $d['foto'] ?>"
+                            onerror="this.src='https://ui-avatars.com/api/?name=<?= urlencode($d['nama']) ?>&background=random&size=256'"
+                            alt="<?= $d['nama'] ?>"
+                            class="w-full h-full object-cover rounded shadow-md grayscale group-hover:grayscale-0 transition">
+                    </div>
 
-                <!-- NAMA -->
-                <h3 class="text-base font-bold text-[#13293D] dark:text-dark-text mb-2 leading-snug">
-                    <?= $d['nama'] ?>
-                </h3>
+                    <!-- NAMA -->
+                    <h3 class="text-base font-bold text-[#13293D] dark:text-dark-text mb-2 leading-snug">
+                        <?= $d['nama'] ?>
+                    </h3>
 
-                <div class="h-0.5 w-8 bg-accent-secondary mx-auto my-3 opacity-50"></div>
+                    <div class="h-0.5 w-8 bg-accent-secondary mx-auto my-3 opacity-50"></div>
 
-                <!-- JABATAN -->
-                <p class="text-xs uppercase tracking-wider font-medium 
+                    <!-- JABATAN -->
+                    <p class="text-xs uppercase tracking-wider font-medium 
                     text-[#18435A] dark:text-dark-muted">
-                    <?= $d['jabatan'] ?>
-                </p>
+                        <?= $d['jabatan'] ?>
+                    </p>
 
-            </div>
+                </div>
 
             <?php endforeach; ?>
         </div>
@@ -83,8 +82,7 @@ require 'partials/header.php';
         <!-- HIGHLIGHT BOX -->
         <div class="mt-16 p-8 rounded-2xl text-center max-w-4xl mx-auto 
             bg-white/60 border border-gray-300/60 
-            dark:bg-dark-bg-2/40 dark:border-dark-muted/30"
-            data-aos="fade-up">
+            dark:bg-dark-bg-2/40 dark:border-dark-muted/30" data-aos="fade-up">
 
             <p class="text-lg font-medium text-[#13293D] dark:text-dark-text mb-2">
                 ✨ Tim Akademik Solid
