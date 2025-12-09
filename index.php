@@ -327,7 +327,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                                         <a href="https://www.instagram.com/reel/DRw1dWvDx09/?utm_source=ig_embed&amp;utm_campaign=loading"
                                             style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                                             target="_blank">Sebuah kiriman dibagikan oleh Soegijapranata Catholic
-                                            University (SCU) (@unika.soegijapranata)</a></p>
+                                            University (SCU) (@unika.soegijapranata)</a>
+                                    </p>
                                 </div>
                             </blockquote>
                             <script async src="//www.instagram.com/embed.js"></script>

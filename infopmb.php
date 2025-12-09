@@ -15,14 +15,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
 
 
     $errors = [];
-    if (empty($jurusan)) $errors[] = "Jurusan harus dipilih";
-    if (empty($nama)) $errors[] = "Nama lengkap harus diisi";
-    if (empty($nik)) $errors[] = "NIK harus diisi";
-    if (empty($hp)) $errors[] = "No HP harus diisi";
-    if (empty($tempat_lahir)) $errors[] = "Tempat lahir harus diisi";
-    if (empty($tanggal_lahir)) $errors[] = "Tanggal lahir harus diisi";
+    if (empty($jurusan))
+        $errors[] = "Jurusan harus dipilih";
+    if (empty($nama))
+        $errors[] = "Nama lengkap harus diisi";
+    if (empty($nik))
+        $errors[] = "NIK harus diisi";
+    if (empty($hp))
+        $errors[] = "No HP harus diisi";
+    if (empty($tempat_lahir))
+        $errors[] = "Tempat lahir harus diisi";
+    if (empty($tanggal_lahir))
+        $errors[] = "Tanggal lahir harus diisi";
 
-    
+
     if (empty($errors)) {
         $data = [
             'waktu' => date('Y-m-d H:i:s'),
@@ -34,20 +40,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
             'tanggal_lahir' => $tanggal_lahir
 
         ];
-        
+
         $saved_data = $data;
-        
-        $entry = date('Y-m-d H:i:s') . " | " . 
-                 $jurusan . " | " . 
-                 $nama . " | " . 
-                 $nik . " | " . 
-                 $hp . " | " . 
-                 $tempat_lahir . " | " . 
-                 $tanggal_lahir . PHP_EOL;
+
+        $entry = date('Y-m-d H:i:s') . " | " .
+            $jurusan . " | " .
+            $nama . " | " .
+            $nik . " | " .
+            $hp . " | " .
+            $tempat_lahir . " | " .
+            $tanggal_lahir . PHP_EOL;
 
         $file = __DIR__ . '/storage/pendaftaran.txt';
         file_put_contents($file, $entry, FILE_APPEND);
-        
+
         $result = 'success';
     } else {
         $result = 'error';
@@ -63,14 +69,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
             <h1 class="text-3xl font-bold text-white mb-3">Form Pendaftaran Mahasiswa Baru</h1>
             <p class="text-gray-400">Isi data diri dengan benar</p>
         </div>
-        
+
         <?php if ($result == 'success' && !empty($saved_data)): ?>
             <div class="simple-form">
                 <div class="success-box">
                     <h3 class="text-xl font-bold text-green-400 mb-3">✅ Pendaftaran Berhasil!</h3>
                     <p>Data Anda telah berhasil disimpan.</p>
                 </div>
-                
+
                 <div class="data-preview">
                     <h4 class="text-lg font-bold text-white mb-4">Data Pendaftaran:</h4>
                     <div class="data-row">
@@ -85,20 +91,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
                         <div class="data-label">NIK</div>
                         <div class="data-value"><?= htmlspecialchars($saved_data['nik']) ?></div>
                     </div>
-                                        <div class="data-row">
+                    <div class="data-row">
                         <div class="data-label">No HP</div>
                         <div class="data-value"><?= htmlspecialchars($saved_data['hp']) ?></div>
                     </div>
                     <div class="data-row">
                         <div class="data-label">Tempat, Tanggal Lahir</div>
-                        <div class="data-value"><?= htmlspecialchars($saved_data['tempat_lahir']) ?>, <?= htmlspecialchars($saved_data['tanggal_lahir']) ?></div>
+                        <div class="data-value"><?= htmlspecialchars($saved_data['tempat_lahir']) ?>,
+                            <?= htmlspecialchars($saved_data['tanggal_lahir']) ?></div>
                     </div>
                     <div class="data-row">
                         <div class="data-label">Waktu Pendaftaran</div>
                         <div class="data-value"><?= htmlspecialchars($saved_data['waktu']) ?></div>
                     </div>
                 </div>
-                
+
                 <div class="mt-6 flex gap-3">
                     <a href="<?= $_SERVER['PHP_SELF'] ?>" class="submit-btn text-center">Daftar Lagi</a>
                     <a href="infopmb.php" class="submit-btn text-center bg-gray-600 hover:bg-gray-700">Kembali</a>
@@ -116,56 +123,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
                         </ul>
                     </div>
                 <?php endif; ?>
-                
+
                 <form method="POST" action="">
                     <div class="form-group">
                         <label class="form-label">Pilih Jurusan *</label>
                         <select name="jurusan" required class="select-input">
                             <option value="">-- Pilih Jurusan --</option>
-                            <option value="S1 Business Information Systems (Sistem Informasi Bisnis)">S1 Business Information Systems (Sistem Informasi Bisnis)</option>
+                            <option value="S1 Business Information Systems (Sistem Informasi Bisnis)">S1 Business
+                                Information Systems (Sistem Informasi Bisnis)</option>
                             <option value="S1 Game Technology (Teknologi Game)">S1 Game Technology (Teknologi Game)</option>
                             <option value="S1 E-commerce">S1 E-commerce</option>
-                            <option value="S1 Akuntansi + S1 Sistem Informasi (Double Degree)">S1 Akuntansi + S1 Sistem Informasi (Double Degree)</option>
+                            <option value="S1 Akuntansi + S1 Sistem Informasi (Double Degree)">S1 Akuntansi + S1 Sistem
+                                Informasi (Double Degree)</option>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label class="form-label">Nama Lengkap *</label>
-                        <input type="text" 
-                               name="nama" 
-                               required 
-                               class="form-input" 
-                               placeholder="Masukkan nama lengkap"
-                               value="<?= isset($_POST['nama']) ? htmlspecialchars($_POST['nama']) : '' ?>">
+                        <input type="text" name="nama" required class="form-input" placeholder="Masukkan nama lengkap"
+                            value="<?= isset($_POST['nama']) ? htmlspecialchars($_POST['nama']) : '' ?>">
                     </div>
-                    
+
                     <div class="form-group">
                         <label class="form-label">NIK *</label>
-                        <input type="text" 
-                               name="nik" 
-                               required 
-                               class="form-input" 
-                               placeholder="Masukkan NIK"
-                               value="<?= isset($_POST['nik']) ? htmlspecialchars($_POST['nik']) : '' ?>">
+                        <input type="text" name="nik" required class="form-input" placeholder="Masukkan NIK"
+                            value="<?= isset($_POST['nik']) ? htmlspecialchars($_POST['nik']) : '' ?>">
                     </div>
-                    
-                                        <div class="form-group">
+
+                    <div class="form-group">
                         <label class="form-label">Tempat Lahir *</label>
-                        <input type="text" 
-                               name="tempat_lahir" 
-                               required 
-                               class="form-input" 
-                               placeholder="Kota tempat lahir"
-                               value="<?= isset($_POST['tempat_lahir']) ? htmlspecialchars($_POST['tempat_lahir']) : '' ?>">
+                        <input type="text" name="tempat_lahir" required class="form-input" placeholder="Kota tempat lahir"
+                            value="<?= isset($_POST['tempat_lahir']) ? htmlspecialchars($_POST['tempat_lahir']) : '' ?>">
                     </div>
-                    
+
                     <div class="form-group">
                         <label class="form-label">Tanggal Lahir *</label>
-                        <input type="date" 
-                               name="tanggal_lahir" 
-                               required 
-                               class="form-input"
-                               value="<?= isset($_POST['tanggal_lahir']) ? htmlspecialchars($_POST['tanggal_lahir']) : '' ?>">
+                        <input type="date" name="tanggal_lahir" required class="form-input"
+                            value="<?= isset($_POST['tanggal_lahir']) ? htmlspecialchars($_POST['tanggal_lahir']) : '' ?>">
                     </div>
 
                     <div class="form-group">
@@ -173,7 +167,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
                             DAFTAR SEKARANG
                         </button>
                     </div>
-                    
+
                     <div class="text-center text-gray-400 text-sm mt-4">
                         * Wajib diisi
                     </div>
@@ -184,12 +178,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
 </main>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const firstInput = document.querySelector('input, select');
         if (firstInput) firstInput.focus();
     });
 </script>
 
-    <?php
-    require __DIR__ . '/partials/footer.php';
-    ?>
+<?php
+require __DIR__ . '/partials/footer.php';
+?>
