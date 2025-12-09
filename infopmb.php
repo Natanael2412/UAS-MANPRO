@@ -119,10 +119,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
                     </div>
                     
                     <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                        <a href="<?= $_SERVER['PHP_SELF'] ?>" 
-                           class="px-6 py-3 rounded-xl font-bold text-white bg-accent-primary hover:bg-accent-secondary transition shadow-lg hover:shadow-accent-primary/25">
-                            Daftar Lagi
-                        </a>
                         <a href="index.php" 
                            class="px-6 py-3 rounded-xl font-bold border border-gray-300 dark:border-white/20 hover:bg-gray-100 dark:hover:bg-white/10 transition">
                             Kembali ke Beranda
