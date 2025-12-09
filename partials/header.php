@@ -97,20 +97,9 @@ tailwind.config = {
         Sistem Informasi
       </a>
 
-      <?php if (isset($hide_menu) && $hide_menu): ?>
-          
-          <div class="flex items-center">
-              <a href="index.php#faculty" class="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 text-white text-sm hover:bg-accent-primary hover:border-transparent transition-all">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                  Kembali ke Daftar Dosen
-              </a>
-          </div>
-
-      <?php else: ?>
-        
     <nav class="hidden md:flex space-x-6">
       <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition">Tentang</a>
-      <a href="#kurikulum" class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition">Kurikulum</a>
+      <a href="#curriculum" class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition">Kurikulum</a>
       <a href="#faculty" class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition">Dosen</a>
       <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition">Proyek</a>
       <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition">Kontak</a>
