@@ -58,7 +58,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
 <main class="w-full overflow-x-hidden bg-dark-bg text-text-light">
 
-    <section id="hero-compact" class="min-h-screen w-full flex flex-col pt-16 pb-20 relative overflow-hidden">
+<section id="hero-compact" class="min-h-screen w-full flex flex-col pt-16 pb-20 relative overflow-hidden bg-light-bg text-light-text 
+    dark:bg-dark-bg dark:text-dark-text">
 
         <div class="flex-none text-center px-4 z-10 animate-fade-down">
             <span
@@ -93,17 +94,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
             </div>
         </div>
 
-        <div class="w-full relative z-10 mt-8 mb-20">
+        <div class="w-full relative z-10 mt-6 mb-16">
 
             <button
-                class="swiper-button-prev-custom absolute top-1/2 left-4 z-20 w-10 h-10 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md">
-                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                class="swiper-button-prev-custom absolute top-1/2 left-4 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
             <button
-                class="swiper-button-next-custom absolute top-1/2 right-4 z-20 w-10 h-10 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md">
-                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                class="swiper-button-next-custom absolute top-1/2 right-4 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M9 5l7 7-7 7" />
                 </svg>
             </button>
@@ -111,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
             <div class="swiper mySwiper w-full h-full border-t border-white/10">
                 <div class="swiper-wrapper">
                     <div
-                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
+                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <iframe class="w-full h-full object-cover opacity-70"
                             src="https://www.youtube.com/embed/UhD8uukQgAM?autoplay=1&mute=1&loop=1&playlistUhD8uukQgAM&controls=0"
                             title="Video Profil" frameborder="0"
@@ -129,15 +130,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
+                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <iframe class="w-full h-full object-cover opacity-70"
                             src="https://www.youtube.com/embed/i6XhsvWYHws?si=tpMaJ-XNj5WDj3Bw" title="Video Profil"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
-                        <div class="absolute bottom-8 left-8 z-10 pointer-events-none">
-                            <h2 class="text-2xl md:text-4xl font-bold text-white text-shadow-lg">SIEGA Metaverse Podcast
+                        <div class="absolute bottom-5 left-5 z-20 pointer-events-none">
+                            <h2 class="text-xl md:text-3xl font-bold text-white text-shadow-lg">SIEGA Metaverse Podcast
                             </h2>
                             <p class="text-gray-200 text-sm md:text-base">Kenali lingkungan belajar kami yang modern.
                             </p>
@@ -148,7 +149,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
+                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full flex items-center justify-center bg-black overflow-y-auto no-scrollbar">
 
@@ -166,14 +167,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none">
                         </div>
-                        <div class="absolute bottom-6 left-6 z-20 pointer-events-none">
+                        <div class="absolute bottom-5 left-5 z-20 pointer-events-none">
                             <p class="text-xl md:text-3xl font-bold text-white leading-tight">Brian - Google Student
                                 Ambassador</p>
                         </div>
                     </div>
 
                     <div
-                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
+                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full flex items-center justify-center bg-black overflow-y-auto no-scrollbar">
 
@@ -191,15 +192,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none">
                         </div>
-                        <div class="absolute bottom-6 left-6 z-20 pointer-events-none">
+                        <div class="absolute bottom-5 left-5 z-20 pointer-events-none">
                             <p class="text-xl md:text-3xl font-bold text-white leading-tight">HMPSSI - Yakin ga join
                                 SIEGA?</p>
                         </div>
                     </div>
 
                     <div
-                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
-
+                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full overflow-y-auto no-scrollbar flex justify-center items-start pt-0 md:pt-2">
 
@@ -232,8 +232,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[85%] md:w-[60%] lg:w-[45%] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group bg-black">
-
+                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full overflow-y-auto no-scrollbar flex justify-center items-start pt-0 md:pt-2">
 
@@ -258,12 +257,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
     </section>
 
-    <section id="about" class="py-16 md:py-24 bg-dark-bg border-t border-white/5">
-        <div class="max-w-6xl mx-auto px-4">
+    <section id="about" class="py-16 md:py-24  bg-light-bg-2 text-light-text dark:bg-dark-bg-2 dark:text-dark-text">
+        <div class="absolute top-0 left-0 w-full h-8 bg-gradient-to-t from-[#0F172A] to-transparent pointer-events-none"></div>
+        <div class="max-w-5xl mx-auto px-6">
             <div class="flex flex-col md:flex-row gap-12 items-center">
                 <div class="md:w-1/2 space-y-6" data-aos="fade-right">
                     <div>
-                        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-2">Tentang Kami</h2>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mb-6">Tentang Kami</h2>
                         <div class="h-1 w-20 bg-accent-primary rounded-full"></div>
                     </div>
                     <p class="text-text-muted leading-relaxed text-justify">
@@ -276,13 +276,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         Lulusan kami tidak hanya pandai coding, tapi juga mengerti strategi bisnis digital, menjadikan
                         mereka aset berharga bagi perusahaan multinasional maupun startup.
                     </p>
-                    <div class="grid grid-cols-2 gap-4 mt-4">
-                        <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-center">
-                            <span class="block text-2xl font-bold text-accent-secondary">A</span>
+                   <div class="grid grid-cols-2 gap-4 mt-4">
+                        <div class="p-4 
+                            bg-blue-100/30 border border-blue-300/40
+                            dark:bg-blue-400/10 dark:border-blue-200/20
+                            rounded-xl text-center transition-colors duration-300 backdrop-blur-sm">
+                            <span class="block text-2xl font-bold text-accent-secondary dark:text-accent-primary">A</span>
                             <span class="text-xs text-text-muted">Akreditasi Unggul</span>
                         </div>
-                        <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-center">
-                            <span class="block text-2xl font-bold text-accent-secondary">95%</span>
+                        <div class="p-4 
+                            bg-blue-100/30 border border-blue-300/40
+                            dark:bg-blue-400/10 dark:border-blue-200/20
+                            rounded-xl text-center transition-colors duration-300 backdrop-blur-sm">
+                            <span class="block text-2xl font-bold text-accent-secondary dark:text-accent-primary">95%</span>
                             <span class="text-xs text-text-muted">Kerja < 3 Bulan</span>
                         </div>
                     </div>
@@ -290,7 +296,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
                 <div class="md:w-1/2 w-full" data-aos="fade-left">
                     <div class="bg-glass-bg p-8 rounded-2xl border border-white/10 relative shadow-2xl">
-                        <h3 class="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">Visi</h3>
+                        <h3 class="text-xl font-bold mb-6 border-b border-white/10 pb-4">Visi</h3>
                         <ul class="space-y-4">
                             <li class="flex gap-4">
                                 <p class="text-sm text-text-muted">Menjadi komunitas akademik yang unggul dalam
@@ -305,7 +311,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                                 </div>
                             </li>
                         </ul>
-                        <h3 class="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">Misi</h3>
+                        <h3 class="text-xl font-bold mb-6 border-b border-white/10 pb-4">Misi</h3>
                         <ul class="space-y-4">
                             <li class="flex gap-4">
                                 <div
@@ -363,7 +369,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
         </div>
     </section>
 
-    <section id="curriculum" class="py-16 md:py-24 bg-black/20">
+    <section id="curriculum" class="py-16 md:py-24 bg-light-bg dark:bg-dark-bg-2 text-light-text dark:text-dark-text transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-extrabold accent-gradient-text mb-4">Konsentrasi Studi</h2>
             <p class="text-text-muted mb-12 max-w-2xl mx-auto">Program Studi Sistem Informasi di Unika Soegijapranata
@@ -372,9 +378,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                 <div
-                    class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-accent-primary/50 transition duration-300 hover:-translate-y-2">
+                    class="group p-6 bg-glass-bg rounded-2xl border border-gray-300/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-yellow-400/50 dark:hover:border-yellow-400/50 ">
                     <div class="text-4xl mb-4 group-hover:scale-110 transition">💻</div>
-                    <h3 class="text-xl font-bold text-white mb-2">Sistem Informasi</h3>
+                    <h3 class="text-xl font-bold mb-2">Sistem Informasi</h3>
                     <p class="text-sm text-text-muted mb-4">Analisis sistem, ERP, dan integrasi teknologi korporat.</p>
                     <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
                         <li>Business Intelligence</li>
@@ -385,9 +391,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </ul>
                 </div>
                 <div
-                    class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-accent-secondary/50 transition duration-300 hover:-translate-y-2 relative overflow-hidden">
+                    class="group p-6 bg-glass-bg rounded-2xl border border-gray-300/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-yellow-400/50 dark:hover:border-yellow-400/50 ">
                     <div class="text-4xl mb-4 group-hover:scale-110 transition">🛒</div>
-                    <h3 class="text-xl font-bold text-white mb-2">E-Commerce</h3>
+                    <h3 class="text-xl font-bold mb-2">E-Commerce</h3>
                     <p class="text-sm text-text-muted mb-4">Bisnis digital, startup teknologi, dan pemasaran online.</p>
                     <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
                         <li>Digital Marketing</li>
@@ -398,9 +404,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </ul>
                 </div>
                 <div
-                    class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-pink-500/50 transition duration-300 hover:-translate-y-2">
+                    class="group p-6 bg-glass-bg rounded-2xl border border-gray-300/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-yellow-400/50 dark:hover:border-yellow-400/50 ">
                     <div class="text-4xl mb-4 group-hover:scale-110 transition">🎮</div>
-                    <h3 class="text-xl font-bold text-white mb-2">Game Technology</h3>
+                    <h3 class="text-xl font-bold mb-2">Game Technology</h3>
                     <p class="text-sm text-text-muted mb-4">Pengembangan game, AI, dan teknologi interaktif.</p>
                     <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
                         <li>Game Design & Development</li>
@@ -411,9 +417,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </ul>
                 </div>
                 <div
-                    class="group p-6 bg-glass-bg rounded-2xl border border-white/10 hover:border-yellow-400/50 transition duration-300 hover:-translate-y-2">
+                    class="group p-6 bg-glass-bg rounded-2xl border border-gray-300/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-yellow-400/50 dark:hover:border-yellow-400/50 ">
                     <div class="text-4xl mb-4 group-hover:scale-110 transition">📊</div>
-                    <h3 class="text-xl font-bold text-white mb-2">AKSI (Akuntansi + SI)</h3>
+                    <h3 class="text-xl font-bold mb-2">AKSI (Akuntansi + SI)</h3>
                     <p class="text-sm text-text-muted mb-4">Program ganda yang menggabungkan keahlian Akuntansi keuangan
                         dengan teknologi sistem informasi modern.</p>
                     <ul class="text-left text-xs text-text-muted ml-5 list-disc space-y-1">
@@ -430,45 +436,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                 bidang industri TI, bisnis, dan kreatif.</p>
     </section>
 
-    <section id="faculty" class="py-16 md:py-24 bg-dark-bg">
+    <section id="faculty" class="py-16 md:py-24 bg-light-bg-2 dark:bg-dark-bg 
+           text-light-text dark:text-dark-text transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-10">Dosen & Staf Ahli</h2>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">Dosen & Staf Ahli</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                 <div
-                    class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-accent-primary/50 transition duration-300 hover:-translate-y-2">
+                    class="group bg-glass-bg rounded-xl p-6 text-center border border-gray-400/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-accent-secondary/50 dark:hover:border-accent-secondary/50">
                     <div
-                        class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-accent-primary/50 transition">
+                        class="w-48 h-48 mx-auto bg-white/50 dark:bg-white/5 p-2 rounded-lg border border-gray-400/40 dark:border-white/10 mb-6 transition group-hover:border-accent-secondary/50 dark:group-hover:border-accent-secondary/50">
                         <img src="assets/img/dosen-ridwan.jpg" alt="Prof. Ridwan"
                             class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-1 leading-tight">Prof. Dr. Ridwan Sanjaya, S.E., S.Kom.,
+                    <h3 class="text-lg font-bold mb-1 leading-tight">Prof. Dr. Ridwan Sanjaya, S.E., S.Kom.,
                         MS.IEC</h3>
                     <div class="h-0.5 w-12 bg-accent-primary mx-auto my-3"></div>
                     <p class="text-text-muted text-sm">Dekan Fakultas Ilmu Komputer / Guru Besar Sistem Informasi</p>
                 </div>
 
                 <div
-                    class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-accent-secondary/50 transition duration-300 hover:-translate-y-2">
+                    class="group bg-glass-bg rounded-xl p-6 text-center border border-gray-400/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-accent-secondary/50 dark:hover:border-accent-secondary/50">
                     <div
-                        class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-accent-secondary/50 transition">
+                        class="w-48 h-48 mx-auto bg-white/50 dark:bg-white/5 p-2 rounded-lg border border-gray-400/40 dark:border-white/10 mb-6 transition group-hover:border-accent-secondary/50 dark:group-hover:border-accent-secondary/50">
                         <img src="assets/img/dosen-bernadinus.jpg" alt="Dr. Bernadinus"
                             class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-1 leading-tight">Dr. Bernadinus Harnadi, S.T., M.T.</h3>
+                    <h3 class="text-lg font-bold mb-1 leading-tight">Dr. Bernadinus Harnadi, S.T., M.T.</h3>
                     <div class="h-0.5 w-12 bg-accent-secondary mx-auto my-3"></div>
                     <p class="text-text-muted text-sm">Wakil Dekan Fakultas Ilmu Komputer</p>
                 </div>
 
                 <div
-                    class="group bg-glass-bg border border-white/10 rounded-xl p-6 text-center hover:border-pink-500/50 transition duration-300 hover:-translate-y-2">
+                    class="group bg-glass-bg rounded-xl p-6 text-center border border-gray-400/50 dark:border-white/10 transition duration-300 hover:-translate-y-2 hover:border-accent-secondary/50 dark:hover:border-accent-secondary/50">
                     <div
-                        class="w-48 h-48 mx-auto bg-white/5 p-2 rounded-lg border border-white/10 mb-6 group-hover:border-pink-500/50 transition">
+                        class="w-48 h-48 mx-auto bg-white/50 dark:bg-white/5 p-2 rounded-lg border border-gray-400/40 dark:border-white/10 mb-6 transition group-hover:border-accent-secondary/50 dark:group-hover:border-accent-secondary/50">
                         <img src="assets/img/dosen-albertus.jpg" alt="Dr. Albertus"
                             class="w-full h-full object-cover rounded shadow-lg grayscale group-hover:grayscale-0 transition duration-500">
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-1 leading-tight">Dr. Albertus Dwiyoga Widiantoro, S.Kom.,
+                    <h3 class="text-lg font-bold mb-1 leading-tight">Dr. Albertus Dwiyoga Widiantoro, S.Kom.,
                         M.Kom.</h3>
                     <div class="h-0.5 w-12 bg-pink-500 mx-auto my-3"></div>
                     <p class="text-text-muted text-sm">Ketua Program Studi Sistem Informasi</p>
@@ -478,7 +485,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
             <div class="text-center mt-12">
                 <a href="dosen.php"
-                    class="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-white/20 bg-white/5 text-white hover:bg-white/10 hover:border-accent-primary hover:scale-105 transition-all duration-300 group">
+                    class="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-gray-400/50 dark:border-white/20 bg-white/40 dark:bg-white/5 hover:bg-white/60 
+                    dark:hover:bg-white/10 hover:border-accent-primary dark:hover:border-accent-primary hover:scale-105 transition-all duration-300 group">
                     Lihat Seluruh Dosen & Staf
                     <span class="group-hover:translate-x-1 transition">&rarr;</span>
                 </a>
@@ -486,79 +494,85 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
         </div>
     </section>
 
-    <section id="projects" class="py-16 md:py-24 bg-black/30 relative overflow-hidden">
+    <section id="projects" class="py-16 md:py-24 bg-light-bg-2 dark:bg-black/30 text-light-text dark:text-dark-text relative overflow-hidden transition-colors duration-300">
         <div class="absolute top-0 right-0 w-64 h-64 bg-accent-primary/10 rounded-full blur-3xl pointer-events-none">
         </div>
         <div class="max-w-6xl mx-auto px-4 relative z-10">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-2">Proyek Unggulan</h2>
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-2">Proyek Unggulan</h2>
                 <p class="text-text-muted">Karya inovatif mahasiswa yang siap diterapkan di industri.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <div
-                    class="group bg-glass-bg border border-white/10 rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-accent-primary/20 transition duration-300">
+                    class="group bg-glass-bg rounded-xl overflow-hidden border border-gray-400/50 dark:border-white/10 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/30">
                     <div class="h-48 bg-gray-800 relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1000&auto=format&fit=crop"
                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100">
                         <div
-                            class="absolute top-3 right-3 px-2 py-1 bg-blue-600/90 backdrop-blur text-[10px] font-bold rounded text-white">
+                            class="absolute top-3 right-3 px-2 py-1 bg-blue-600/90 backdrop-blur text-[10px] font-bold rounded">
                             WEB APP</div>
                     </div>
                     <div class="p-6">
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-accent-primary transition">
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-accent-primary transition">
                             E-Invitation Platform</h4>
                         <p class="text-sm text-text-muted mb-4 line-clamp-3">Platform undangan pernikahan digital
                             berbasis SAAS dengan fitur pembayaran gateway, manajemen tamu, dan QR Check-in.</p>
                         <div class="flex gap-2">
                             <span
-                                class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-gray-300">Laravel</span>
+                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Laravel</span>
                             <span
-                                class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-gray-300">ReactJS</span>
+                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">ReactJS</span>
                         </div>
                     </div>
                 </div>
                 <div
-                    class="group bg-glass-bg border border-white/10 rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-accent-secondary/20 transition duration-300">
+                    class="group bg-glass-bg rounded-xl overflow-hidden border border-gray-400/50 dark:border-white/10 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/30">
                     <div class="h-48 bg-gray-800 relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1000&auto=format&fit=crop"
                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100">
                         <div
-                            class="absolute top-3 right-3 px-2 py-1 bg-green-600/90 backdrop-blur text-[10px] font-bold rounded text-white">
+                            class="absolute top-3 right-3 px-2 py-1 bg-green-600/90 backdrop-blur text-[10px] font-bold rounded">
                             IOT & AI</div>
                     </div>
                     <div class="p-6">
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-accent-secondary transition">Smart
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-accent-secondary transition">Smart
                             Farming AI</h4>
                         <p class="text-sm text-text-muted mb-4 line-clamp-3">Sistem monitoring tanaman hidroponik
                             menggunakan IoT dan Computer Vision untuk mendeteksi penyakit daun secara otomatis.</p>
                         <div class="flex gap-2">
                             <span
-                                class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-gray-300">Python</span>
+                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Python</span>
                             <span
-                                class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-gray-300">TensorFlow</span>
+                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">TensorFlow</span>
                         </div>
                     </div>
                 </div>
                 <div
-                    class="group bg-glass-bg border border-white/10 rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-pink-500/20 transition duration-300">
+                    class="group bg-glass-bg rounded-xl overflow-hidden border border-gray-400/50 dark:border-white/10 transition duration-300 hover:shadow-2xl hover:shadow-pink-500/20 dark:hover:shadow-pink-500/30">
                     <div class="h-48 bg-gray-800 relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1592478411213-61535fdd861d?q=80&w=1000&auto=format&fit=crop"
                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100">
                         <div
-                            class="absolute top-3 right-3 px-2 py-1 bg-purple-600/90 backdrop-blur text-[10px] font-bold rounded text-white">
+                            class="absolute top-3 right-3 px-2 py-1 bg-purple-600/90 backdrop-blur text-[10px] font-bold rounded">
                             GAME DEV</div>
                     </div>
                     <div class="p-6">
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-pink-400 transition">Nusantara VR
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-pink-400 transition">Nusantara VR
                         </h4>
                         <p class="text-sm text-text-muted mb-4 line-clamp-3">Game edukasi sejarah berbasis Virtual
                             Reality (VR) yang mengajak pemain menjelajahi candi-candi di Indonesia secara imersif.</p>
                         <div class="flex gap-2">
                             <span
-                                class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-gray-300">Unity
+                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Unity
                                 3D</span>
                             <span
-                                class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-gray-300">C#</span>
+                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">C#</span>
                         </div>
                     </div>
                 </div>
@@ -566,9 +580,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
         </div>
     </section>
 
-    <section id="contact" class="py-16 md:py-24 bg-dark-bg border-t border-white/5">
+    <section id="contact" class="py-16 md:py-24 bg-light-bg dark:bg-dark-bg border-t border-gray-300/30 dark:border-white/5 transition-colors">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white text-center mb-12">Hubungi Kami</h2>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12">Hubungi Kami</h2>
 
             <div class="bg-glass-bg rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
                 <div class="grid grid-cols-1 md:grid-cols-2">
@@ -586,7 +600,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         <div class="space-y-6 text-sm text-text-muted">
 
                             <div class="flex items-start gap-4">
-                                <div class="p-2 bg-white/5 rounded-lg text-accent-primary">
+                                <div class="p-2 rounded-lg bg-white/50 dark:bg-white/5 border border-gray-300/30 dark:border-white/10 text-accent-primary transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -595,13 +609,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                                     </svg>
                                 </div>
                                 <div>
-                                    <h4 class="text-white font-bold mb-1">Jam Kerja</h4>
+                                    <h4 class="font-bold mb-1">Jam Kerja</h4>
                                     <p>Senin – Jumat<br>08.00 – 15.00 WIB</p>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-4">
-                                <div class="p-2 bg-white/5 rounded-lg text-accent-secondary">
+                                <div class="p-2 rounded-lg bg-white/50 dark:bg-white/5 border border-gray-300/30 dark:border-white/10 text-accent-primary transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -610,14 +624,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                                     </svg>
                                 </div>
                                 <div>
-                                    <h4 class="text-white font-bold mb-1">Alamat</h4>
+                                    <h4 class="font-bold mb-1">Alamat</h4>
                                     <p>Gedung Henricus Constant Lt 8 Unika Soegijapranata<br>
                                         Jl. Pawiyatan Luhur IV/1, Bendan Duwur,<br>Semarang, Jawa Tengah 50234</p>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-4">
-                                <div class="p-2 bg-white/5 rounded-lg text-pink-400">
+                                <div class="p-2 rounded-lg bg-white/50 dark:bg-white/5 border border-gray-300/30 dark:border-white/10 text-accent-primary transition-colors">   
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -627,7 +641,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                                     </svg>
                                 </div>
                                 <div>
-                                    <h4 class="text-white font-bold mb-1">Kontak</h4>
+                                    <h4 class="font-bold mb-1">Kontak</h4>
                                     <p class="mb-1">Email: <a href="mailto:si@unika.ac.id"
                                             class="text-accent-primary hover:underline">si@unika.ac.id</a></p>
                                     <p>Hotline: <a href="https://wa.me/6281903385595"
@@ -639,9 +653,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="p-8 md:p-10 border-t md:border-t-0 md:border-l border-white/10 bg-black/20 flex flex-col justify-center">
-
-                        <h3 class="text-xl font-bold text-white mb-6">Kirim Pesan</h3>
+                        class="p-8 md:p-10 border-t md:border-t-0 md:border-l border-gray-300/40 dark:border-white/10 bg-white/60 dark:bg-black/20 flex flex-col justify-center transition-colors">
+                        <h3 class="text-xl font-bold mb-6">Kirim Pesan</h3>
 
                         <?php if ($contact_result): ?>
                             <div
@@ -654,18 +667,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                             <div>
                                 <label class="block text-sm font-medium text-text-muted mb-2">Nama Lengkap</label>
                                 <input type="text" id="cf-name" name="name" required placeholder="Masukkan nama Anda"
-                                    class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
+                                    class="w-full px-4 py-3 rounded-xl bg-white/70 dark:bg-white/5 border border-gray-300/40 dark:border-white/10 text-light-text dark:text-dark-text placeholder-gray-400 dark:placeholder-gray-500
+                                    focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-text-muted mb-2">Email</label>
                                 <input type="email" id="cf-email" name="email" required placeholder="email@contoh.com"
-                                    class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
+                                    class="w-full px-4 py-3 rounded-xl bg-white/70 dark:bg-white/5 border border-gray-300/40 dark:border-white/10 text-light-text dark:text-dark-text placeholder-gray-400 dark:placeholder-gray-500
+                                    focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-text-muted mb-2">Pesan</label>
                                 <textarea id="cf-message" name="message" rows="4" required
                                     placeholder="Tulis pesan Anda di sini..."
-                                    class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition resize-none"></textarea>
+                                    class="w-full px-4 py-3 rounded-xl bg-white/70 dark:bg-white/5 border border-gray-300/40 dark:border-white/10 text-light-text dark:text-dark-text placeholder-gray-400 dark:placeholder-gray-500
+                                    focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition resize-none"></textarea>
                             </div>
                             <button type="submit" name="contact_submit"
                                 class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-accent-primary to-accent-secondary hover:shadow-lg hover:shadow-accent-primary/25 transition transform hover:-translate-y-1">
@@ -673,7 +689,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                             </button>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
