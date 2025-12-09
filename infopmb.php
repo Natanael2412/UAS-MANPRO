@@ -63,117 +63,155 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['daftar'])) {
 ?>
 
 
-<main class="w-full bg-dark-bg text-text-light min-h-screen py-10">
-    <div class="container mx-auto px-4">
-        <div class="text-center mb-10">
-            <h1 class="text-3xl font-bold text-white mb-3">Form Pendaftaran Mahasiswa Baru</h1>
-            <p class="text-gray-400">Isi data diri dengan benar</p>
+<main class="min-h-screen pt-24 pb-20 
+    bg-light-bg text-light-text 
+    dark:bg-dark-bg dark:text-dark-text transition-colors duration-300">
+
+    <div class="max-w-3xl mx-auto px-4">
+        
+        <div class="text-center mb-12" data-aos="fade-down">
+            <h1 class="text-3xl md:text-5xl font-extrabold 
+                bg-gradient-to-r from-blue-500 via-teal-400 to-accent-primary
+                bg-clip-text text-transparent mb-4">
+                Form Pendaftaran
+            </h1>
+            <p class="text-text-muted dark:text-dark-muted">
+                Bergabunglah menjadi bagian dari inovator masa depan SIEGA.
+            </p>
         </div>
 
-        <?php if ($result == 'success' && !empty($saved_data)): ?>
-            <div class="simple-form">
-                <div class="success-box">
-                    <h3 class="text-xl font-bold text-green-400 mb-3">✅ Pendaftaran Berhasil!</h3>
-                    <p>Data Anda telah berhasil disimpan.</p>
+        <div class="p-8 md:p-10 rounded-2xl border border-gray-300/40 dark:border-white/10 
+            bg-white/60 dark:bg-black/20 backdrop-blur-md shadow-2xl transition-colors"
+            data-aos="fade-up">
+        
+            <?php if ($result == 'success' && !empty($saved_data)): ?>
+                <div class="text-center space-y-6">
+                    <div class="p-4 bg-green-500/20 border border-green-500/30 text-green-700 dark:text-green-300 rounded-xl">
+                        <h3 class="text-xl font-bold mb-1">✅ Pendaftaran Berhasil!</h3>
+                        <p class="text-sm">Data Anda telah berhasil kami terima.</p>
+                    </div>
+                    
+                    <div class="text-left bg-white/50 dark:bg-white/5 p-6 rounded-xl border border-gray-200 dark:border-white/10">
+                        <h4 class="text-lg font-bold mb-4 border-b border-gray-300 dark:border-white/10 pb-2">Preview Data</h4>
+                        
+                        <div class="grid grid-cols-1 gap-y-3 text-sm">
+                            <div class="grid grid-cols-3 gap-4">
+                                <span class="text-text-muted dark:text-dark-muted">Jurusan</span>
+                                <span class="col-span-2 font-medium"><?= htmlspecialchars($saved_data['jurusan']) ?></span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <span class="text-text-muted dark:text-dark-muted">Nama</span>
+                                <span class="col-span-2 font-medium"><?= htmlspecialchars($saved_data['nama']) ?></span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <span class="text-text-muted dark:text-dark-muted">NIK</span>
+                                <span class="col-span-2 font-medium"><?= htmlspecialchars($saved_data['nik']) ?></span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <span class="text-text-muted dark:text-dark-muted">No HP</span>
+                                <span class="col-span-2 font-medium"><?= htmlspecialchars($saved_data['hp']) ?></span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <span class="text-text-muted dark:text-dark-muted">TTL</span>
+                                <span class="col-span-2 font-medium"><?= htmlspecialchars($saved_data['tempat_lahir']) ?>, <?= htmlspecialchars($saved_data['tanggal_lahir']) ?></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                        <a href="<?= $_SERVER['PHP_SELF'] ?>" 
+                           class="px-6 py-3 rounded-xl font-bold text-white bg-accent-primary hover:bg-accent-secondary transition shadow-lg hover:shadow-accent-primary/25">
+                            Daftar Lagi
+                        </a>
+                        <a href="index.php" 
+                           class="px-6 py-3 rounded-xl font-bold border border-gray-300 dark:border-white/20 hover:bg-gray-100 dark:hover:bg-white/10 transition">
+                            Kembali ke Beranda
+                        </a>
+                    </div>
                 </div>
 
-                <div class="data-preview">
-                    <h4 class="text-lg font-bold text-white mb-4">Data Pendaftaran:</h4>
-                    <div class="data-row">
-                        <div class="data-label">Jurusan</div>
-                        <div class="data-value"><?= htmlspecialchars($saved_data['jurusan']) ?></div>
-                    </div>
-                    <div class="data-row">
-                        <div class="data-label">Nama Lengkap</div>
-                        <div class="data-value"><?= htmlspecialchars($saved_data['nama']) ?></div>
-                    </div>
-                    <div class="data-row">
-                        <div class="data-label">NIK</div>
-                        <div class="data-value"><?= htmlspecialchars($saved_data['nik']) ?></div>
-                    </div>
-                    <div class="data-row">
-                        <div class="data-label">No HP</div>
-                        <div class="data-value"><?= htmlspecialchars($saved_data['hp']) ?></div>
-                    </div>
-                    <div class="data-row">
-                        <div class="data-label">Tempat, Tanggal Lahir</div>
-                        <div class="data-value"><?= htmlspecialchars($saved_data['tempat_lahir']) ?>,
-                            <?= htmlspecialchars($saved_data['tanggal_lahir']) ?></div>
-                    </div>
-                    <div class="data-row">
-                        <div class="data-label">Waktu Pendaftaran</div>
-                        <div class="data-value"><?= htmlspecialchars($saved_data['waktu']) ?></div>
-                    </div>
-                </div>
-
-                <div class="mt-6 flex gap-3">
-                    <a href="<?= $_SERVER['PHP_SELF'] ?>" class="submit-btn text-center">Daftar Lagi</a>
-                    <a href="infopmb.php" class="submit-btn text-center bg-gray-600 hover:bg-gray-700">Kembali</a>
-                </div>
-            </div>
-        <?php else: ?>
-            <div class="simple-form">
+            <?php else: ?>
                 <?php if ($result == 'error'): ?>
-                    <div class="error-box">
-                        <h3 class="text-xl font-bold text-red-400 mb-2">❌ Terdapat Kesalahan</h3>
-                        <ul class="list-disc pl-5">
+                    <div class="mb-6 p-4 bg-red-500/20 border border-red-500/30 text-red-600 dark:text-red-300 rounded-xl">
+                        <h3 class="font-bold mb-2">❌ Terdapat Kesalahan Input</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-1">
                             <?php foreach ($error_list as $error): ?>
-                                <li class="text-red-300"><?= $error ?></li>
+                                <li><?= $error ?></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
                 <?php endif; ?>
+                
+                <form method="POST" action="" class="space-y-6">
+                    
+                    <?php 
+                        $inputClass = "w-full px-4 py-3 rounded-xl bg-white/70 dark:bg-white/5 border border-gray-300/40 dark:border-white/10 text-light-text dark:text-dark-text placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition";
+                        $labelClass = "block text-sm font-medium text-text-muted dark:text-dark-muted mb-2";
+                    ?>
 
-                <form method="POST" action="">
-                    <div class="form-group">
-                        <label class="form-label">Pilih Jurusan *</label>
-                        <select name="jurusan" required class="select-input">
-                            <option value="">-- Pilih Jurusan --</option>
-                            <option value="S1 Business Information Systems (Sistem Informasi Bisnis)">S1 Business
-                                Information Systems (Sistem Informasi Bisnis)</option>
-                            <option value="S1 Game Technology (Teknologi Game)">S1 Game Technology (Teknologi Game)</option>
-                            <option value="S1 E-commerce">S1 E-commerce</option>
-                            <option value="S1 Akuntansi + S1 Sistem Informasi (Double Degree)">S1 Akuntansi + S1 Sistem
-                                Informasi (Double Degree)</option>
+                    <div>
+                        <label class="block text-sm font-medium text-text-muted dark:text-dark-muted mb-2">Pilih Jurusan <span class="text-red-500">*</span></label>
+                        <select name="jurusan" required class="<?= $inputClass ?> appearance-none cursor-pointer">
+                            <option value="" class="dark:bg-dark-bg">-- Pilih Program Studi --</option>
+                            <option value="S1 Business Information Systems" class="dark:bg-dark-bg">S1 Business Information Systems (Sistem Informasi Bisnis)</option>
+                            <option value="S1 Game Technology" class="dark:bg-dark-bg">S1 Game Technology (Teknologi Game)</option>
+                            <option value="S1 E-commerce" class="dark:bg-dark-bg">S1 E-commerce</option>
+                            <option value="S1 Akuntansi + SI" class="dark:bg-dark-bg">S1 Akuntansi + S1 Sistem Informasi (Double Degree)</option>
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <label class="form-label">Nama Lengkap *</label>
-                        <input type="text" name="nama" required class="form-input" placeholder="Masukkan nama lengkap"
-                            value="<?= isset($_POST['nama']) ? htmlspecialchars($_POST['nama']) : '' ?>">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="<?= $labelClass ?>">Nama Lengkap <span class="text-red-500">*</span></label>
+                            <input type="text" name="nama" required placeholder="Nama sesuai KTP"
+                                   class="<?= $inputClass ?>"
+                                   value="<?= isset($_POST['nama']) ? htmlspecialchars($_POST['nama']) : '' ?>">
+                        </div>
+                        
+                        <div>
+                            <label class="<?= $labelClass ?>">NIK <span class="text-red-500">*</span></label>
+                            <input type="number" name="nik" required placeholder="16 digit NIK"
+                                   class="<?= $inputClass ?>"
+                                   value="<?= isset($_POST['nik']) ? htmlspecialchars($_POST['nik']) : '' ?>">
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label class="form-label">NIK *</label>
-                        <input type="text" name="nik" required class="form-input" placeholder="Masukkan NIK"
-                            value="<?= isset($_POST['nik']) ? htmlspecialchars($_POST['nik']) : '' ?>">
+                    <div>
+                        <label class="<?= $labelClass ?>">Nomor HP / WhatsApp <span class="text-red-500">*</span></label>
+                        <input type="tel" name="hp" required placeholder="08xxxxxxxxxx"
+                               class="<?= $inputClass ?>"
+                               value="<?= isset($_POST['hp']) ? htmlspecialchars($_POST['hp']) : '' ?>">
                     </div>
 
-                    <div class="form-group">
-                        <label class="form-label">Tempat Lahir *</label>
-                        <input type="text" name="tempat_lahir" required class="form-input" placeholder="Kota tempat lahir"
-                            value="<?= isset($_POST['tempat_lahir']) ? htmlspecialchars($_POST['tempat_lahir']) : '' ?>">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="<?= $labelClass ?>">Tempat Lahir <span class="text-red-500">*</span></label>
+                            <input type="text" name="tempat_lahir" required placeholder="Kota kelahiran"
+                                   class="<?= $inputClass ?>"
+                                   value="<?= isset($_POST['tempat_lahir']) ? htmlspecialchars($_POST['tempat_lahir']) : '' ?>">
+                        </div>
+                        
+                        <div>
+                            <label class="<?= $labelClass ?>">Tanggal Lahir <span class="text-red-500">*</span></label>
+                            <input type="date" name="tanggal_lahir" required 
+                                   class="<?= $inputClass ?> dark:[color-scheme:dark]"
+                                   value="<?= isset($_POST['tanggal_lahir']) ? htmlspecialchars($_POST['tanggal_lahir']) : '' ?>">
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label class="form-label">Tanggal Lahir *</label>
-                        <input type="date" name="tanggal_lahir" required class="form-input"
-                            value="<?= isset($_POST['tanggal_lahir']) ? htmlspecialchars($_POST['tanggal_lahir']) : '' ?>">
-                    </div>
-
-                    <div class="form-group">
-                        <button type="submit" name="daftar" class="submit-btn">
+                    <div class="pt-4">
+                        <button type="submit" name="daftar" 
+                            class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-accent-primary to-accent-secondary hover:shadow-lg hover:shadow-accent-primary/25 transition transform hover:-translate-y-1">
                             DAFTAR SEKARANG
                         </button>
                     </div>
-
-                    <div class="text-center text-gray-400 text-sm mt-4">
-                        * Wajib diisi
-                    </div>
+                    
+                    <p class="text-center text-xs text-text-muted dark:text-dark-muted mt-4">
+                        Pastikan data yang Anda masukkan sudah benar sebelum mengirim.
+                    </p>
                 </form>
-            </div>
-        <?php endif; ?>
+            <?php endif; ?>
+        </div>
     </div>
 </main>
 
