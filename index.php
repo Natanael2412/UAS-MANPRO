@@ -640,20 +640,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100">
                         <div
                             class="absolute top-3 right-3 px-2 py-1 bg-green-600/90 backdrop-blur text-[10px] font-bold rounded">
-                            IOT & AI</div>
+                            GIT & GITHUB</div>
                     </div>
                     <div class="p-6">
-                        <h4 class="text-lg font-bold mb-2 group-hover:text-accent-secondary transition">Smart
-                            Farming AI</h4>
-                        <p class="text-sm text-text-muted mb-4 line-clamp-3">Sistem monitoring tanaman hidroponik
-                            menggunakan IoT dan Computer Vision untuk mendeteksi penyakit daun secara otomatis.</p>
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-accent-secondary transition">Manajemen Proyek</h4>
+                        <p class="text-sm text-text-muted mb-4 line-clamp-3">Pembuatan website untuk SIEGA dalam kelompok menggunakan GIT & GITHUB</p>
                         <div class="flex gap-2">
                             <span
                                 class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
-                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Python</span>
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Manpro</span>
                             <span
                                 class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
-                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">TensorFlow</span>
+                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">2025</span>
                         </div>
                     </div>
                 </div>
@@ -678,7 +676,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                                 <span
                                     class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
                                     dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Game tech
-                                    3D</span>
+                                    VR</span>
                                 <span
                                     class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
                                     dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Lingkungan</span>
