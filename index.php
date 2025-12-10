@@ -657,31 +657,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         </div>
                     </div>
                 </div>
-                <div
-                    class="group bg-glass-bg rounded-xl overflow-hidden border border-gray-400/50 dark:border-white/10 transition duration-300 hover:shadow-2xl hover:shadow-pink-500/20 dark:hover:shadow-pink-500/30">
-                    <div class="h-48 bg-gray-800 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1592478411213-61535fdd861d?q=80&w=1000&auto=format&fit=crop"
-                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100">
-                        <div
-                            class="absolute top-3 right-3 px-2 py-1 bg-purple-600/90 backdrop-blur text-[10px] font-bold rounded">
-                            GAME DEV</div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="text-lg font-bold mb-2 group-hover:text-pink-400 transition">Nusantara VR
-                        </h4>
-                        <p class="text-sm text-text-muted mb-4 line-clamp-3">Game edukasi sejarah berbasis Virtual
-                            Reality (VR) yang mengajak pemain menjelajahi candi-candi di Indonesia secara imersif.</p>
-                        <div class="flex gap-2">
-                            <span
-                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
-                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Unity
-                                3D</span>
-                            <span
-                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
-                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">C#</span>
+                <a href="https://www.kompas.tv/regional/486764/mahasiswa-di-semarang-ciptakan-vr-game-peduli-lingkungan" 
+                        target="_blank" 
+                        class="block no-underline hover:no-underline">
+                    <div
+                        class="group bg-glass-bg rounded-xl overflow-hidden border border-gray-400/50 dark:border-white/10 transition duration-300 hover:shadow-2xl hover:shadow-pink-500/20 dark:hover:shadow-pink-500/30">
+                        <div class="h-48 bg-gray-800 relative overflow-hidden">
+                            <img src="https://raw.githubusercontent.com/Natanael2412/UAS-MANPRO/main/assets/img/proyekunggulan2.png"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100">
+                            <div
+                                class="absolute top-3 right-3 px-2 py-1 bg-purple-600/90 backdrop-blur text-[10px] font-bold rounded">
+                                VR Game</div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-lg font-bold mb-2 group-hover:text-pink-400 transition">VR Game Peduli Lingkungan
+                            </h4>
+                            <p class="text-sm text-text-muted mb-4 line-clamp-3">Teknologi Virtual Reality atau VR yang dirancang Yohanes Stanley,
+                                mahasiswa game technology Unika Soegijapranata Semarang berisi game tentang lingkungan.</p>
+                            <div class="flex gap-2">
+                                <span
+                                    class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                    dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Game tech
+                                    3D</span>
+                                <span
+                                    class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                    dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Lingkungan</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
