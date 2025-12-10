@@ -604,30 +604,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                 <p class="text-text-muted">Karya inovatif mahasiswa yang siap diterapkan di industri.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div
-                    class="group bg-glass-bg rounded-xl overflow-hidden border border-gray-400/50 dark:border-white/10 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/30">
-                    <div class="h-48 bg-gray-800 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1000&auto=format&fit=crop"
-                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100">
-                        <div
-                            class="absolute top-3 right-3 px-2 py-1 bg-blue-600/90 backdrop-blur text-[10px] font-bold rounded">
-                            WEB APP</div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="text-lg font-bold mb-2 group-hover:text-accent-primary transition">
-                            E-Invitation Platform</h4>
-                        <p class="text-sm text-text-muted mb-4 line-clamp-3">Platform undangan pernikahan digital
-                            berbasis SAAS dengan fitur pembayaran gateway, manajemen tamu, dan QR Check-in.</p>
-                        <div class="flex gap-2">
-                            <span
-                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
-                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Laravel</span>
-                            <span
-                                class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
-                                dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">ReactJS</span>
+                <a href="https://siega.id/2024/11/30/mahasiswa-siega-raih-juara-2-gelar-inovasi-teknologi-kota-semarang/" 
+                        target="_blank" 
+                        class="block no-underline hover:no-underline">
+                    <div
+                        class="group bg-glass-bg rounded-xl overflow-hidden border border-gray-400/50 dark:border-white/10 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/30">
+                        <div class="h-48 bg-gray-800 relative overflow-hidden">
+                            <img src="https://raw.githubusercontent.com/Natanael2412/UAS-MANPRO/main/assets/img/proyekunggulan.png"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100">
+                            <div
+                                class="absolute top-3 right-3 px-2 py-1 bg-blue-600/90 backdrop-blur text-[10px] font-bold rounded">
+                                Prestasi</div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-lg font-bold mb-2 group-hover:text-accent-primary transition">
+                                Inovasi Teknologi Kota Semarang</h4>
+                            <p class="text-sm text-text-muted mb-4 line-clamp-3">Proyek mata kuliah Kota Cerdas yang dibuat oleh mahasiswa SIEGA 2022, 
+                                yaitu Evan, Tania, Audrey, Renza, Unya, Adit, Farrel, Garry, Suryo, dan Rey, berhasil meraih juara 2 tingkat perguruan 
+                                tinggi se-Kota Semarang dalam Gelar Inovasi Teknologi Informasi dan Komunikasi.</p>
+                            <div class="flex gap-2">
+                                <span
+                                    class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                    dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Kota Cerdas</span>
+                                <span
+                                    class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
+                                    dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Juara</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 <div
                     class="group bg-glass-bg rounded-xl overflow-hidden border border-gray-400/50 dark:border-white/10 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/30">
                     <div class="h-48 bg-gray-800 relative overflow-hidden">
