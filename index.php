@@ -58,8 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
 <main class="w-full overflow-x-hidden bg-dark-bg text-text-light">
 
-    <section id="hero-compact" class="min-h-screen w-full flex flex-col pt-16 pb-20 relative overflow-hidden bg-light-bg text-light-text 
-    dark:bg-dark-bg dark:text-dark-text">
+    <section id="hero-compact" class="min-h-screen w-full flex flex-col pt-16 pb-20 relative overflow-hidden bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text">
 
         <div class="flex-none text-center px-4 z-10 animate-fade-down">
             <span
@@ -352,7 +351,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
     </section>
 
-    <section id="about" class="py-16 md:py-24  bg-light-bg-2 text-light-text dark:bg-dark-bg-2 dark:text-dark-text">
+    <section id="about" class="py-16 md:py-24  bg-light-bg-2 dark:bg-dark-bg-2 text-light-text dark:text-dark-text">
         <div
             class="absolute top-0 left-0 w-full h-8 bg-gradient-to-t from-[#0F172A] to-transparent pointer-events-none">
         </div>
@@ -536,7 +535,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                 bidang industri TI, bisnis, dan kreatif.</p>
     </section>
 
-    <section id="faculty" class="py-16 md:py-24 bg-light-bg-2 dark:bg-dark-bg 
+    <section id="faculty" class="py-16 md:py-24 bg-light-bg-2 dark:bg-dark-bg-2
            text-light-text dark:text-dark-text transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">Dosen & Staf Ahli</h2>
@@ -595,7 +594,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
     </section>
 
     <section id="projects"
-        class="py-16 md:py-24 bg-light-bg-2 dark:bg-black/30 text-light-text dark:text-dark-text relative overflow-hidden transition-colors duration-300">
+        class="py-16 md:py-24 bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text relative overflow-hidden transition-colors duration-300">
         <div class="absolute top-0 right-0 w-64 h-64 bg-accent-primary/10 rounded-full blur-3xl pointer-events-none">
         </div>
         <div class="max-w-6xl mx-auto px-4 relative z-10">

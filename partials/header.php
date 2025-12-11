@@ -27,19 +27,20 @@ tailwind.config = {
       },
 
       colors: {
-        'light-bg': '#F8FAFC',
-        'light-bg-2': '#caf0f8',
+        'light-bg': '#F2F5F9',
+        'light-bg-2': '#FFFFFF',
         'light-card': '#FFFFFF',
-        'light-text': '#1E293B',
+        'light-text': '#0D1B2A',
         'light-muted': '#64748B',
 
-        'dark-bg':   '#1D3461',  
-        'dark-bg-2': '#1F487E',   
-        'dark-text': '#EEF2FF',  
-        'dark-muted': '#829CBC', 
+        'dark-bg':   '#0A1A2F',   
+        'dark-bg-2': '#10263F',
+        'dark-card': '#01497C',   
+        'dark-text': '#E6EDF5',   
+        'dark-muted': '#89C2D9',  
 
-        'accent-primary': '#6290C8',
-        'accent-secondary': '#376996',
+        'accent-primary': '#2C7DA0',
+        'accent-secondary': '#468FAF',
       },
 
       backgroundImage: {
