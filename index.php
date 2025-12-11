@@ -58,7 +58,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
 
 <main class="w-full overflow-x-hidden bg-dark-bg text-text-light">
 
-    <section id="hero-compact" class="min-h-screen w-full flex flex-col pt-16 pb-20 relative overflow-hidden bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text">
+    <section id="hero-compact"
+        class="min-h-screen w-full flex flex-col pt-16 pb-20 relative overflow-hidden bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text">
 
         <div class="flex-none text-center px-4 z-10 animate-fade-down">
             <span
@@ -96,22 +97,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
         <div class="w-full relative z-10 mt-6 mb-16">
 
             <button
-                class="swiper-button-prev-custom absolute top-1/2 left-4 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md">
+                class="hero-btn-prev absolute top-1/2 left-4 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md cursor-pointer">
                 <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
+
             <button
-                class="swiper-button-next-custom absolute top-1/2 right-4 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md">
+                class="hero-btn-next absolute top-1/2 right-4 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-white hover:bg-accent-primary transition backdrop-blur-md cursor-pointer">
                 <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M9 5l7 7-7 7" />
                 </svg>
             </button>
 
-            <div class="swiper mySwiper w-full h-full border-t border-white/10">
+            <div class="swiper heroSwiper w-full h-full border-t border-white/10">
                 <div class="swiper-wrapper">
                     <div
-                        class="swiper-slide w-[45%] md:w-[25%] lg:w-[32%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
+                        class="swiper-slide w-[35%] md:w-[20%] lg:w-[16%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <iframe class="w-full h-full object-cover opacity-70"
                             src="https://www.youtube.com/embed/UhD8uukQgAM?autoplay=1&mute=1&loop=1&playlistUhD8uukQgAM&controls=0"
                             title="Video Profil" frameborder="0"
@@ -129,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[45%] md:w-[25%] lg:w-[22%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
+                        class="swiper-slide w-[35%] md:w-[20%] lg:w-[16%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <iframe class="w-full h-full object-cover opacity-70"
                             src="https://www.youtube.com/embed/i6XhsvWYHws?si=tpMaJ-XNj5WDj3Bw" title="Video Profil"
                             frameborder="0"
@@ -148,7 +150,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[45%] md:w-[25%] lg:w-[22%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
+                        class="swiper-slide w-[35%] md:w-[20%] lg:w-[16%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full flex items-center justify-center bg-black overflow-y-auto no-scrollbar">
 
@@ -173,7 +175,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[45%] md:w-[25%] lg:w-[22%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
+                        class="swiper-slide w-[35%] md:w-[20%] lg:w-[16%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full flex items-center justify-center bg-black overflow-y-auto no-scrollbar">
 
@@ -198,7 +200,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[45%] md:w-[25%] lg:w-[22%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
+                        class="swiper-slide w-[35%] md:w-[20%] lg:w-[16%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full overflow-y-auto no-scrollbar flex justify-center items-start pt-0 md:pt-2">
 
@@ -231,7 +233,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[45%] md:w-[25%] lg:w-[22%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
+                        class="swiper-slide w-[35%] md:w-[20%] lg:w-[16%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full overflow-y-auto no-scrollbar flex justify-center items-start pt-0 md:pt-2">
 
@@ -834,7 +836,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
     // A. Inisialisasi AOS
     AOS.init({ duration: 800, once: true });
 
-    // B. Inisialisasi LENIS (Smooth Scroll) - MENGEMBALIKAN FUNGSI SCROLL HALUS
+    // B. Inisialisasi LENIS (Smooth Scroll)
     const lenis = new Lenis({
         duration: 1.2,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -846,7 +848,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
     }
     requestAnimationFrame(raf);
 
-    // Integrasi Lenis untuk Anchor Link (Scroll Halus saat klik menu)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -855,21 +856,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
         });
     });
 
-    // C. Konfigurasi SWIPER (Hero Carousel - 3D Coverflow)
-    var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow", // Mengaktifkan mode 3D
+    // C. Konfigurasi SWIPER (Hero Carousel)
+    var swiper = new Swiper(".heroSwiper", {
+        effect: "coverflow", 
         grabCursor: true,
-        centeredSlides: true, // Wajib true agar slide aktif ada di tengah
-        slidesPerView: "auto", // Wajib auto agar lebar slide mengikuti CSS (w-60% dll)
+        centeredSlides: true,     
+        slidesPerView: "auto",    
+        spaceBetween: 30,
         loop: true,
-        speed: 800, // Transisi lebih halus
+        speed: 800,
 
-        // Ubah bagian coverflowEffect
         coverflowEffect: {
             rotate: 0,
             stretch: 0,
-            depth: 100, // Kurangi depth agar tidak terlalu jauh
-            modifier: 1, // Kurangi modifier
+            depth: 100,
+            modifier: 1,
             slideShadows: true,
         },
 
@@ -878,10 +879,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
         },
+
+        // --- BAGIAN INI DIUBAH ---
         navigation: {
-            nextEl: ".swiper-button-next-custom",
-            prevEl: ".swiper-button-prev-custom",
+            nextEl: ".hero-btn-next", // Sesuaikan dengan class di HTML baru
+            prevEl: ".hero-btn-prev", // Sesuaikan dengan class di HTML baru
         },
+        // -------------------------
+
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
