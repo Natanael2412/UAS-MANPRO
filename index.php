@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
             <div class="swiper mySwiper w-full h-full border-t border-white/10">
                 <div class="swiper-wrapper">
                     <div
-                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
+                        class="swiper-slide w-[45%] md:w-[25%] lg:w-[32%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <iframe class="w-full h-full object-cover opacity-70"
                             src="https://www.youtube.com/embed/UhD8uukQgAM?autoplay=1&mute=1&loop=1&playlistUhD8uukQgAM&controls=0"
                             title="Video Profil" frameborder="0"
@@ -129,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
+                        class="swiper-slide w-[45%] md:w-[25%] lg:w-[22%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <iframe class="w-full h-full object-cover opacity-70"
                             src="https://www.youtube.com/embed/i6XhsvWYHws?si=tpMaJ-XNj5WDj3Bw" title="Video Profil"
                             frameborder="0"
@@ -148,7 +148,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
+                        class="swiper-slide w-[45%] md:w-[25%] lg:w-[22%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full flex items-center justify-center bg-black overflow-y-auto no-scrollbar">
 
@@ -173,7 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
+                        class="swiper-slide w-[45%] md:w-[25%] lg:w-[22%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full flex items-center justify-center bg-black overflow-y-auto no-scrollbar">
 
@@ -198,7 +198,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
+                        class="swiper-slide w-[45%] md:w-[25%] lg:w-[22%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full overflow-y-auto no-scrollbar flex justify-center items-start pt-0 md:pt-2">
 
@@ -231,7 +231,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                     </div>
 
                     <div
-                        class="swiper-slide w-[65%] md:w-[45%] lg:w-[32%] aspect-[5/6] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
+                        class="swiper-slide w-[45%] md:w-[25%] lg:w-[22%] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-xl relative group bg-black">
                         <div
                             class="w-full h-full overflow-y-auto no-scrollbar flex justify-center items-start pt-0 md:pt-2">
 
@@ -413,46 +413,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         <ul class="space-y-4">
                             <li class="flex gap-4">
                                 <div
-                                    class="w-8 h-8 rounded-full bg-accent-primary/20 flex items-center justify-center text-accent-primary flex-shrink-0">
-                                    1</div>
+                                    class="w-8 h-8 rounded-full bg-accent-primary text-white flex items-center justify-center font-bold shadow-md flex-shrink-0">
+                                    1
+                                </div>
                                 <p class="text-sm text-text-muted">Menyelenggarakan pendidikan yang berkualitas secara
                                     akademik dengan didukung pengembangan kepribadian yang utuh dan potensi
                                     kepemimpinan.</p>
                             </li>
                             <li class="flex gap-4">
                                 <div
-                                    class="w-8 h-8 rounded-full bg-accent-secondary/20 flex items-center justify-center text-accent-secondary flex-shrink-0">
-                                    2</div>
+                                    class="w-8 h-8 rounded-full bg-accent-secondary text-white flex items-center justify-center font-bold shadow-md flex-shrink-0">
+                                    2
+                                </div>
                                 <p class="text-sm text-text-muted">Melakukan penelitian untuk pengembangan ilmu dan
                                     teknologi demi meningkatkan kesejahteraan manusia.</p>
                             </li>
                             <li class="flex gap-4">
                                 <div
-                                    class="w-8 h-8 rounded-full bg-pink-500/20 flex items-center justify-center text-pink-400 flex-shrink-0">
-                                    3</div>
+                                    class="w-8 h-8 rounded-full bg-pink-500 text-white flex items-center justify-center font-bold shadow-md flex-shrink-0">
+                                    3
+                                </div>
                                 <p class="text-sm text-text-muted">Melakukan pengabdian kepada masyarakat sebagai
                                     penerapan ilmu dan teknologi yang telah dikembangkan dalam penelitian dan
                                     kesejahteraan manusia.</p>
                             </li>
                             <li class="flex gap-4">
                                 <div
-                                    class="w-8 h-8 rounded-full bg-accent-primary/20 flex items-center justify-center text-accent-primary flex-shrink-0">
-                                    4</div>
+                                    class="w-8 h-8 rounded-full bg-accent-primary text-white flex items-center justify-center font-bold shadow-md flex-shrink-0">
+                                    4
+                                </div>
                                 <p class="text-sm text-text-muted">Memberikan perhatian dan mencari pemecahan terhadap
                                     berbagai masalah sosial budaya masyarakat melalui komunitas akademik.</p>
                             </li>
                             <li class="flex gap-4">
                                 <div
-                                    class="w-8 h-8 rounded-full bg-accent-secondary/20 flex items-center justify-center text-accent-secondary flex-shrink-0">
-                                    5</div>
+                                    class="w-8 h-8 rounded-full bg-accent-secondary text-white flex items-center justify-center font-bold shadow-md flex-shrink-0">
+                                    5
+                                </div>
                                 <p class="text-sm text-text-muted">Mengembangkan jaringan Kerjasama dengan berbagai
                                     institusi pendidikan, penelitian dan pengabdian lokal, nasional dan internasional
                                     untuk meningkatkan kualitas pendidikan dan penelitian.</p>
                             </li>
                             <li class="flex gap-4">
                                 <div
-                                    class="w-8 h-8 rounded-full bg-pink-500/20 flex items-center justify-center text-pink-400 flex-shrink-0">
-                                    6</div>
+                                    class="w-8 h-8 rounded-full bg-pink-500 text-white flex items-center justify-center font-bold shadow-md flex-shrink-0">
+                                    6
+                                </div>
                                 <p class="text-sm text-text-muted">Memperbaiki dan mengembangkan universitas secara
                                     terus menerus, sehingga dapat mendukung segala upaya untuk mencapai keunggulan.</p>
                             </li>
@@ -603,9 +609,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                 <p class="text-text-muted">Karya inovatif mahasiswa yang siap diterapkan di industri.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <a href="https://siega.id/2024/11/30/mahasiswa-siega-raih-juara-2-gelar-inovasi-teknologi-kota-semarang/" 
-                        target="_blank" 
-                        class="block no-underline hover:no-underline">
+                <a href="https://siega.id/2024/11/30/mahasiswa-siega-raih-juara-2-gelar-inovasi-teknologi-kota-semarang/"
+                    target="_blank" class="block no-underline hover:no-underline">
                     <div
                         class="group bg-glass-bg rounded-xl overflow-hidden border border-gray-400/50 dark:border-white/10 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/30">
                         <div class="h-48 bg-gray-800 relative overflow-hidden">
@@ -618,13 +623,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         <div class="p-6">
                             <h4 class="text-lg font-bold mb-2 group-hover:text-accent-primary transition">
                                 Inovasi Teknologi Kota Semarang</h4>
-                            <p class="text-sm text-text-muted mb-4 line-clamp-3">Proyek mata kuliah Kota Cerdas yang dibuat oleh mahasiswa SIEGA 2022, 
-                                yaitu Evan, Tania, Audrey, Renza, Unya, Adit, Farrel, Garry, Suryo, dan Rey, berhasil meraih juara 2 tingkat perguruan 
+                            <p class="text-sm text-text-muted mb-4 line-clamp-3">Proyek mata kuliah Kota Cerdas yang
+                                dibuat oleh mahasiswa SIEGA 2022,
+                                yaitu Evan, Tania, Audrey, Renza, Unya, Adit, Farrel, Garry, Suryo, dan Rey, berhasil
+                                meraih juara 2 tingkat perguruan
                                 tinggi se-Kota Semarang dalam Gelar Inovasi Teknologi Informasi dan Komunikasi.</p>
                             <div class="flex gap-2">
                                 <span
                                     class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
-                                    dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Kota Cerdas</span>
+                                    dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Kota
+                                    Cerdas</span>
                                 <span
                                     class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
                                     dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Juara</span>
@@ -642,8 +650,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                             GIT & GITHUB</div>
                     </div>
                     <div class="p-6">
-                        <h4 class="text-lg font-bold mb-2 group-hover:text-accent-secondary transition">Manajemen Proyek</h4>
-                        <p class="text-sm text-text-muted mb-4 line-clamp-3">Pembuatan website untuk SIEGA dalam kelompok menggunakan GIT & GITHUB</p>
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-accent-secondary transition">Manajemen Proyek
+                        </h4>
+                        <p class="text-sm text-text-muted mb-4 line-clamp-3">Pembuatan website untuk SIEGA dalam
+                            kelompok menggunakan GIT & GITHUB</p>
                         <div class="flex gap-2">
                             <span
                                 class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
@@ -654,9 +664,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                         </div>
                     </div>
                 </div>
-                <a href="https://www.kompas.tv/regional/486764/mahasiswa-di-semarang-ciptakan-vr-game-peduli-lingkungan" 
-                        target="_blank" 
-                        class="block no-underline hover:no-underline">
+                <a href="https://www.kompas.tv/regional/486764/mahasiswa-di-semarang-ciptakan-vr-game-peduli-lingkungan"
+                    target="_blank" class="block no-underline hover:no-underline">
                     <div
                         class="group bg-glass-bg rounded-xl overflow-hidden border border-gray-400/50 dark:border-white/10 transition duration-300 hover:shadow-2xl hover:shadow-pink-500/20 dark:hover:shadow-pink-500/30">
                         <div class="h-48 bg-gray-800 relative overflow-hidden">
@@ -667,14 +676,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
                                 VR Game</div>
                         </div>
                         <div class="p-6">
-                            <h4 class="text-lg font-bold mb-2 group-hover:text-pink-400 transition">VR Game Peduli Lingkungan
+                            <h4 class="text-lg font-bold mb-2 group-hover:text-pink-400 transition">VR Game Peduli
+                                Lingkungan
                             </h4>
-                            <p class="text-sm text-text-muted mb-4 line-clamp-3">Teknologi Virtual Reality atau VR yang dirancang Yohanes Stanley,
-                                mahasiswa game technology Unika Soegijapranata Semarang berisi game tentang lingkungan.</p>
+                            <p class="text-sm text-text-muted mb-4 line-clamp-3">Teknologi Virtual Reality atau VR yang
+                                dirancang Yohanes Stanley,
+                                mahasiswa game technology Unika Soegijapranata Semarang berisi game tentang lingkungan.
+                            </p>
                             <div class="flex gap-2">
                                 <span
                                     class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
-                                    dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Game tech
+                                    dark:border-white/10 rounded text-[10px] text-black-700 dark:text-gray-300transition-colors duration-300">Game
+                                    tech
                                     VR</span>
                                 <span
                                     class="px-2 py-1 bg-white/40 dark:bg-white/5 border border-gray-300/50 
@@ -851,13 +864,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submit'])) {
         loop: true,
         speed: 800, // Transisi lebih halus
 
-        // Pengaturan efek 3D
+        // Ubah bagian coverflowEffect
         coverflowEffect: {
-            rotate: 0,      // Sudut putar (0 = datar, 50 = miring banget)
-            stretch: 0,     // Jarak tarik antar slide
-            depth: 150,     // Seberapa "dalam" efek 3D-nya (semakin besar semakin jauh slide samping)
-            modifier: 1.5,  // Pengali efek
-            slideShadows: true, // Bayangan gelap di slide samping agar fokus ke tengah
+            rotate: 0,
+            stretch: 0,
+            depth: 100, // Kurangi depth agar tidak terlalu jauh
+            modifier: 1, // Kurangi modifier
+            slideShadows: true,
         },
 
         autoplay: {
